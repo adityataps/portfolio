@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import { NavLink, BrowserRouter, Route, Switch, useLocation, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import About from "./components/screens/desktop/about";
 import Blog from "./components/screens/desktop/blog";
 import Contact from "./components/screens/desktop/contact";
-import Home from "./components/screens/desktop/home.";
+import Home from "./components/screens/desktop/home";
 import NotFound from "./components/screens/desktop/notFound";
 import Projects from "./components/screens/desktop/projects";
 import Resume from "./components/screens/desktop/resume";
