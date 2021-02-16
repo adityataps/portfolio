@@ -5,6 +5,7 @@ import NavBar from "./elements/navbar";
 import styled from "styled-components";
 import bgImg from "../../media/switz.jpg";
 import ContentContainer from "./elements/contentContainer";
+import ProjectContainer from "./elements/projectContainer";
 
 function Projects(props) {
 
@@ -14,11 +15,7 @@ function Projects(props) {
         <PageWrapper>
             <NavBar />
             <ContentContainer>
-                <div>
-
-                    {console.log(projects)}
-
-                </div>
+                <ProjectContainer projects={projects} />
             </ContentContainer>
         </PageWrapper>
     )
