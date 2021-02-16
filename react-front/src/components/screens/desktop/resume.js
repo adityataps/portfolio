@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from "./elements/navbar";
 import styled from "styled-components";
-import bgImg from "../../media/flowers.jpg";
+import bgImg from "../../media/arc.jpg";
 import ContentContainer from "./elements/contentContainer";
 
 function Resume() {

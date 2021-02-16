@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
+import Typist from "react-typist";
 import "./stylesheets/about.css"
+import 'react-typist/dist/Typist.css'
 import bgImg from "../../media/barca-city.jpg"
 import me from "../../media/me.png"
 import NavBar from "./elements/navbar";
@@ -19,8 +21,18 @@ function About() {
                         </div>
                     </div>
                     <div className={"about-text"} >
-                        <div className={"text-container"}>
 
+                        <div className={"typist-container"}>
+                            <Typist startDelay={800} cursor={{blink: true, element: '|'}}>
+                                System.out.println("
+                                <b style={{color: 'crimson'}}>
+                                    hello world!
+                                </b>
+                                ");
+                            </Typist>
+                        </div>
+
+                        <div className={"text-container"}>
                             <p>
                                 I'm a developer based in Atlanta, GA, studying artificial intelligence
                                 and user-centric programming at the Georgia Institute of Technology,

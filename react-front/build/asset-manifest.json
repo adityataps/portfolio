@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f3ed28d.chunk.css",
+    "main.js": "/static/js/main.1bbc4ca5.chunk.js",
+    "main.js.map": "/static/js/main.1bbc4ca5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f16832d4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f16832d4.js.map",
+    "static/css/2.a1596f27.chunk.css": "/static/css/2.a1596f27.chunk.css",
+    "static/js/2.f4d74e68.chunk.js": "/static/js/2.f4d74e68.chunk.js",
+    "static/js/2.f4d74e68.chunk.js.map": "/static/js/2.f4d74e68.chunk.js.map",
+    "static/js/3.be048ccd.chunk.js": "/static/js/3.be048ccd.chunk.js",
+    "static/js/3.be048ccd.chunk.js.map": "/static/js/3.be048ccd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a1596f27.chunk.css.map": "/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.8f3ed28d.chunk.css.map": "/static/css/main.8f3ed28d.chunk.css.map",
+    "static/js/2.f4d74e68.chunk.js.LICENSE.txt": "/static/js/2.f4d74e68.chunk.js.LICENSE.txt",
+    "static/media/barca-beach.2e35a0bd.jpg": "/static/media/barca-beach.2e35a0bd.jpg",
+    "static/media/barca-city.54e295ed.jpg": "/static/media/barca-city.54e295ed.jpg",
+    "static/media/flowers.35761935.jpg": "/static/media/flowers.35761935.jpg",
+    "static/media/gothic-q.9907b88f.jpg": "/static/media/gothic-q.9907b88f.jpg",
+    "static/media/me.62a387da.png": "/static/media/me.62a387da.png",
+    "static/media/name.64c37887.png": "/static/media/name.64c37887.png",
+    "static/media/switz.2e4aca20.jpg": "/static/media/switz.2e4aca20.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f16832d4.js",
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.f4d74e68.chunk.js",
+    "static/css/main.8f3ed28d.chunk.css",
+    "static/js/main.1bbc4ca5.chunk.js"
+  ]
+}

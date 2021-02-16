@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import './stylesheets/projects.css'
 import NavBar from "./elements/navbar";
 import styled from "styled-components";
 import bgImg from "../../media/switz.jpg";
 import ContentContainer from "./elements/contentContainer";
 
-function Projects() {
+function Projects(props) {
+
+    const projects = props
+
     return(
         <PageWrapper>
             <NavBar />
             <ContentContainer>
+                <div>
 
+                    {console.log(projects)}
+
+                </div>
             </ContentContainer>
         </PageWrapper>
     )

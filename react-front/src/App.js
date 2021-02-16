@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
@@ -10,29 +10,50 @@ import NotFound from "./components/screens/desktop/notFound";
 import Projects from "./components/screens/desktop/projects";
 import Resume from "./components/screens/desktop/resume";
 import Test from "./components/screens/desktop/test";
+import axios from "axios";
 
 function App() {
+
+    const [data, setData] = useState({ posts: null, projects: null})
+
+    useEffect(() => {
+        const fetchAll = async () => {
+            const gotPosts = await axios(
+                "http://127.0.0.1:8000/api/blogposts/"
+            )
+            const gotProjects = await axios(
+                "http://127.0.0.1:8000/api/projects/"
+            )
+
+            setData({posts: gotPosts.data, projects: gotProjects.data})
+        }
+
+        fetchAll();
+    }, []);
+
     return (
         <div>
             <BrowserRouter>
                 <Switch>
-                    <AnimationApp />
+                    <AnimationApp data={data}/>
                 </Switch>
             </BrowserRouter>
         </div>
     )
 }
 
-function AnimationApp() {
+function AnimationApp(props) {
 
     let location = useLocation()
+    const data = props.data
+
     return(
         <div>
             <div>
                 <TransitionGroup>
                     <CSSTransition
                         key={location.key}
-                        timeout={300}
+                        timeout={500}
                         classNames={"page"}
                         unmountOnExit
                     >
@@ -49,12 +70,12 @@ function AnimationApp() {
                             )} />
                             <Route path={"/blog"} exact render={() => (
                                 <div className={"page"}>
-                                    <Blog />
+                                    <Blog data={data.posts}/>
                                 </div>
                             )} />
                             <Route path={"/projects"} exact render={() => (
                                 <div className={"page"}>
-                                    <Projects />
+                                    <Projects data={data.projects}/>
                                 </div>
                             )} />
                             <Route path={"/resume"} exact render={() => (

@@ -1,12 +1,17 @@
 import React from 'react'
+import "./stylesheets/blog.css"
 import NavBar from "./elements/navbar";
 import styled from "styled-components";
 import bgImg from "../../media/gothic-q.jpg";
 
-function Blog() {
+function Blog(props) {
+
+    const posts = props
+
     return(
         <PageWrapper>
             <NavBar />
+            {console.log(posts)}
         </PageWrapper>
     )
 }
