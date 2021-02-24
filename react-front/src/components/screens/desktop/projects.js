@@ -4,6 +4,8 @@ import './stylesheets/projects.css'
 import NavBar from "./elements/navbar";
 import styled from "styled-components";
 import bgImg from "../../media/switz.jpg";
+import Typist from "react-typist";
+import 'react-typist/dist/Typist.css'
 import ContentContainer from "./elements/contentContainer";
 import ProjectContainer from "./elements/projectContainer";
 
@@ -15,7 +17,18 @@ function Projects(props) {
         <PageWrapper>
             <NavBar />
             <ContentContainer>
-                <ProjectContainer projects={projects} />
+                <div className={"project-contents"}>
+                    <div className={"typist-container"}>
+                        <Typist startDelay={800} cursor={{blink: true, element: '|'}}>
+                            &lt;b&gt;&nbsp;
+                            <b style={{color: 'crimson'}}>
+                                past works and collaborations
+                            </b>
+                            &nbsp;&lt;/b&gt;
+                        </Typist>
+                    </div>
+                    <ProjectContainer projects={projects} />
+                </div>
             </ContentContainer>
         </PageWrapper>
     )

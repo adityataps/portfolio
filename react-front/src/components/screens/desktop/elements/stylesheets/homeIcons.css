@@ -1,0 +1,27 @@
+.icon-container {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin: 15% auto;
+}
+
+.home-icon {
+    fill: black;
+    transition: 1s;
+    width: 3vw;
+    height: 3vw;
+    padding: 5px;
+}
+
+.home-icon:hover {
+    fill: crimson;
+    transition: 1s;
+}
+
+.home-icon:active {
+    fill: white;
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+}

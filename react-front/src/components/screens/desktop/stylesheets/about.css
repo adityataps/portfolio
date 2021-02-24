@@ -27,24 +27,20 @@
     height: 100%;
     margin: auto;
     font-family: "Lora", serif;
-    font-size: 130%;
+    font-size: 120%;
+    display: block;
 }
 
-.typist-container {
-    margin: auto;
+.about-typist-container {
+    margin: 10vw auto 2vw;
     font-family: "Consolas", monospace;
     font-size: 1.5vw;
-    height: 20%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-
+    height: auto;
+    font-weight: bolder;
 }
 
-.text-container {
+.about-text-container {
     width: 100%;
-    height: 60%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    height: auto;
+    margin: auto
 }

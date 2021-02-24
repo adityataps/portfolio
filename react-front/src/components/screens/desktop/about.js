@@ -7,6 +7,7 @@ import bgImg from "../../media/barca-city.jpg"
 import me from "../../media/me.png"
 import NavBar from "./elements/navbar";
 import ContentContainer from "./elements/contentContainer";
+import '../desktop/elements/stylesheets/contentContainer.css'
 
 function About() {
     return(
@@ -20,9 +21,9 @@ function About() {
                             <img src={me} alt={""} className={"portrait"} />
                         </div>
                     </div>
-                    <div className={"about-text"} >
+                    <div className={"about-text"}>
 
-                        <div className={"typist-container"}>
+                        <div className={"about-typist-container"}>
                             <Typist startDelay={800} cursor={{blink: true, element: '|'}}>
                                 System.out.println("
                                 <b style={{color: 'crimson'}}>
@@ -32,7 +33,7 @@ function About() {
                             </Typist>
                         </div>
 
-                        <div className={"text-container"}>
+                        <div className={"about-text-container"}>
                             <p>
                                 I'm a developer based in Atlanta, GA, studying artificial intelligence
                                 and user-centric programming at the Georgia Institute of Technology,

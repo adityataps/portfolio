@@ -1,0 +1,68 @@
+.topic-text {
+    /*font-family: "Poiret One", sans-serif;*/
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1fr;
+}
+
+.unsorted {
+    color: dimgray;
+}
+
+.food {
+    color: darkorange;
+}
+
+.programming {
+    color: limegreen;
+}
+
+.lifestyle {
+    color: darkred;
+}
+
+.opinion {
+    color: dodgerblue;
+}
+
+.tv {
+    color: goldenrod;
+}
+
+.gaming {
+    color: darkcyan;
+}
+
+.art {
+    color: darkslateblue;
+}
+
+.diy {
+    color: mediumvioletred;
+}
+
+.leet {
+    color: lightgreen;
+}
+
+.interviews {
+    color: sienna;
+}
+
+.podcasts {
+    color: navy;
+}
+
+.books {
+    color: darkgoldenrod;
+}
+
+.reviews {
+    color: violet;
+}
+
+.travel {
+    color: black;
+}

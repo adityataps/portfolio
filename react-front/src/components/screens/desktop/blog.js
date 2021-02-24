@@ -3,6 +3,7 @@ import "./stylesheets/blog.css"
 import NavBar from "./elements/navbar";
 import styled from "styled-components";
 import bgImg from "../../media/gothic-q.jpg";
+import BlogpostContainer from "./elements/blogpostContainer";
 
 function Blog(props) {
 
@@ -11,6 +12,11 @@ function Blog(props) {
     return(
         <PageWrapper>
             <NavBar />
+
+            <BlogpostContainer posts={posts}>
+
+            </BlogpostContainer>
+
             {console.log(posts)}
         </PageWrapper>
     )

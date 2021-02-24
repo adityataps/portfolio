@@ -12,10 +12,8 @@ function ProjectContainer(props) {
 
     return (
         <div className={"projects-container"}>
-            {/*{console.log(projects)}*/}
             {projects !== null ? projects.map((project) => (
-                <a key={project.date} className={"project-link"} href={project.link}>
-                    {/*{console.log(project.finish)}*/}
+                <a key={project.date} className={"project-link"} href={project.link} target={"_blank"}>
                     <div className={"project-cell"}>
                         <b className={"project-title"}> {project.title} </b>
                         <i className={"project-timeframe"}> {project.timeframe} </i>

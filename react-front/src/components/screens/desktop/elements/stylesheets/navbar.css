@@ -5,13 +5,14 @@
     margin-right: auto;
     /*margin-top: 2%;*/
     background-color: white;
+    z-index: 5;
 }
 
 .nav-name {
     height: auto;
     width: 30%;
     margin-left: 1%;
-    margin-top: 1vw;
+    margin-top: 0.8vw;
     float: left;
 }
 

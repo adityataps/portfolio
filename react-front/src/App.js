@@ -12,11 +12,31 @@ import Resume from "./components/screens/desktop/resume";
 import Test from "./components/screens/desktop/test";
 import axios from "axios";
 
+import arc from './components/media/arc.jpg'
+import beach from './components/media/barca-beach.jpg'
+import city from './components/media/barca-city.jpg'
+import goth from './components/media/gothic-q.jpg'
+import me from './components/media/me.png'
+import name from './components/media/name.png'
+import switz from './components/media/switz.jpg'
+
+
+
+
 function App() {
 
     const [data, setData] = useState({ posts: null, projects: null})
 
     useEffect(() => {
+
+        const imgs = [
+            arc, beach, city, goth, me, name, switz
+        ]
+
+        imgs.forEach((picture) => {
+            new Image().src = picture.fileName
+        })
+
         const fetchAll = async () => {
             const gotPosts = await axios(
                 "http://127.0.0.1:8000/api/blogposts/"
@@ -63,32 +83,32 @@ function AnimationApp(props) {
                                     <Home />
                                 </div>
                             )} />
-                            <Route path={"/about"} exact render={() => (
+                            <Route path={"/about"} render={() => (
                                 <div className={"page"}>
                                     <About />
                                 </div>
                             )} />
-                            <Route path={"/blog"} exact render={() => (
+                            <Route path={"/blog"} render={() => (
                                 <div className={"page"}>
                                     <Blog data={data.posts}/>
                                 </div>
                             )} />
-                            <Route path={"/projects"} exact render={() => (
+                            <Route path={"/projects"} render={() => (
                                 <div className={"page"}>
                                     <Projects data={data.projects}/>
                                 </div>
                             )} />
-                            <Route path={"/resume"} exact render={() => (
+                            <Route path={"/resume"} render={() => (
                                 <div className={"page"}>
                                     <Resume />
                                 </div>
                             )} />
-                            <Route path={"/contact"} exact render={() => (
+                            <Route path={"/contact"} render={() => (
                                 <div className={"page"}>
                                     <Contact />
                                 </div>
                             )} />
-                            <Route path={"/test"} exact render={() => (
+                            <Route path={"/test"} render={() => (
                                 <div className={"page"}>
                                     <Test />
                                 </div>
