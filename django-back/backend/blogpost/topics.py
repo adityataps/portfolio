@@ -1,0 +1,17 @@
+TOPIC_CHOICES = (
+    (0, ("Unsorted")),
+    (1, ("Food")),
+    (2, ("Programming")),
+    (3, ("Lifestyle")),
+    (4, ("Opinion")),
+    (5, ("TV and Movies")),
+    (6, ("Gaming")),
+    (7, ("Art")),
+    (8, ("DIY")),
+    (9, ("LeetCode and HackerRank")),
+    (10, ("Interviews")),
+    (11, ("Podcasts")),
+    (12, ("Books and Literature")),
+    (13, ("Reviews")),
+    (14, ("Travel")),
+)

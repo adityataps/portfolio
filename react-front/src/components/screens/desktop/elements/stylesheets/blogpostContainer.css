@@ -41,12 +41,22 @@
 
 .post-date {
     color: dimgray;
-    font-size: 100%;
+    font-size: 90%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.share-post {
+    cursor: grabbing;
+    float: right;
+    font-weight: bold;
+    color: maroon;
+    font-size: 90%;
     margin-top: 20px;
     margin-bottom: -20px;
 }
 
 .post-content {
     font-family: "Lora", serif;
-    font-size: 120%;
+    font-size: 110%;
 }
