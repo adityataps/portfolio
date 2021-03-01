@@ -2,40 +2,36 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import About from "./components/screens/desktop/about";
-import Blog from "./components/screens/desktop/blog";
-import Contact from "./components/screens/desktop/contact";
-import Home from "./components/screens/desktop/home";
-import NotFound from "./components/screens/desktop/notFound";
-import Projects from "./components/screens/desktop/projects";
-import Resume from "./components/screens/desktop/resume";
-import Test from "./components/screens/desktop/test";
+import DesktopScreen from './components/common/elements/desktopScreen'
+import About from "./components/screens/about/about";
+import Blog from "./components/screens/blog/blog";
+import Contact from "./components/screens/contact/contact";
+import Home from "./components/screens/home/home";
+import NotFound from "./components/screens/notFound/notFound";
+import Projects from "./components/screens/projects/projects";
+import Resume from "./components/screens/resume/resume";
+import Test from "./components/screens/test/test";
 import axios from "axios";
-
-import arc from './components/media/arc.jpg'
-import beach from './components/media/barca-beach.jpg'
-import city from './components/media/barca-city.jpg'
-import goth from './components/media/gothic-q.jpg'
-import me from './components/media/me.png'
-import name from './components/media/name.png'
-import switz from './components/media/switz.jpg'
-
-
-
+// import arc from './components/media/arc.jpg'
+// import beach from './components/media/barca-beach.jpg'
+// import city from './components/media/barca-city.jpg'
+// import goth from './components/media/gothic-q.jpg'
+// import me from './components/media/me.png'
+// import name from './components/media/name.png'
+// import switz from './components/media/switz.jpg'
 
 function App() {
 
     const [data, setData] = useState({ posts: null, projects: null})
+    // const imgs = [
+    //     arc, beach, city, goth, me, name, switz
+    // ]
 
     useEffect(() => {
 
-        const imgs = [
-            arc, beach, city, goth, me, name, switz
-        ]
-
-        imgs.forEach((picture) => {
-            new Image().src = picture.fileName
-        })
+        // imgs.forEach((picture) => {
+        //     new Image().src = picture.fileName
+        // })
 
         const fetchAll = async () => {
             const gotPosts = await axios(
@@ -51,15 +47,20 @@ function App() {
         fetchAll();
     }, []);
 
-    return (
-        <div>
-            <BrowserRouter>
-                <Switch>
-                    <AnimationApp data={data}/>
-                </Switch>
-            </BrowserRouter>
-        </div>
-    )
+    if (data.posts !== null && data.projects !== null) {
+        return (
+            <div>
+                <BrowserRouter>
+                    <Switch>
+                        <AnimationApp data={data}/>
+                    </Switch>
+                </BrowserRouter>
+            </div>
+        )
+    }
+
+    return null
+
 }
 
 function AnimationApp(props) {
@@ -79,44 +80,49 @@ function AnimationApp(props) {
                     >
                         <Switch location={location}>
                             <Route path={"/"} exact render={() => (
-                                <div className={"page"}>
+                                <DesktopScreen>
                                     <Home />
-                                </div>
+                                </DesktopScreen>
                             )} />
                             <Route path={"/about"} render={() => (
-                                <div className={"page"}>
+                                <DesktopScreen>
                                     <About />
-                                </div>
+                                </DesktopScreen>
+                            )} />
+                            <Route path={"/blog/:post"} exact render={() => (
+                                <DesktopScreen>
+                                    <Blog data={data.posts}/>
+                                </DesktopScreen>
                             )} />
                             <Route path={"/blog"} render={() => (
-                                <div className={"page"}>
+                                <DesktopScreen>
                                     <Blog data={data.posts}/>
-                                </div>
+                                </DesktopScreen>
                             )} />
                             <Route path={"/projects"} render={() => (
-                                <div className={"page"}>
+                                <DesktopScreen>
                                     <Projects data={data.projects}/>
-                                </div>
+                                </DesktopScreen>
                             )} />
                             <Route path={"/resume"} render={() => (
-                                <div className={"page"}>
+                                <DesktopScreen>
                                     <Resume />
-                                </div>
+                                </DesktopScreen>
                             )} />
                             <Route path={"/contact"} render={() => (
-                                <div className={"page"}>
+                                <DesktopScreen>
                                     <Contact />
-                                </div>
+                                </DesktopScreen>
                             )} />
                             <Route path={"/test"} render={() => (
-                                <div className={"page"}>
+                                <DesktopScreen>
                                     <Test />
-                                </div>
+                                </DesktopScreen>
                             )} />
                             <Route path={"/"} render={() => (
-                                <div className={"page"}>
+                                <DesktopScreen>
                                     <NotFound />
-                                </div>
+                                </DesktopScreen>
                             )} />
                         </Switch>
                     </CSSTransition>

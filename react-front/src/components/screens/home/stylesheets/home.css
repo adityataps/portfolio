@@ -1,0 +1,9 @@
+.name {
+    display: block;
+    height: auto;
+    position: center;
+    width: auto;
+    max-width: 80%;
+    user-select: none;
+    margin: 15vw auto 2vw;
+}

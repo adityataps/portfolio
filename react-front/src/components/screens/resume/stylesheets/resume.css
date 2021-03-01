@@ -1,0 +1,19 @@
+.resume-typist-container {
+    margin: 0 auto 0 calc(5% - 20px);
+    font-family: "Consolas", monospace;
+    font-size: 2vw;
+    height: 12.5%;
+    font-weight: bolder;
+    position: relative;
+}
+
+.resume-typist-contents {
+     position: absolute;
+     bottom: 10px;
+ }
+
+.resume-contents-container {
+    width: 100%;
+    display: block;
+}
+

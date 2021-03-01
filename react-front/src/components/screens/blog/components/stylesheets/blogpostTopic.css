@@ -1,0 +1,162 @@
+.topic-text {
+    /*font-family: "Poiret One", sans-serif;*/
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1fr;
+    user-select: none;
+}
+
+.unsorted {
+    color: dimgray;
+}
+
+.unsorted-sub {
+    color: black;
+    text-shadow: 1px 1px dimgray;
+    user-select: none;
+}
+
+.food {
+    color: darkorange;
+}
+
+.food-sub {
+    color: black;
+    text-shadow: 1px 1px darkorange;
+    user-select: none;
+
+}
+
+.programming {
+    color: limegreen;
+}
+
+.programming-sub {
+    color: black;
+    text-shadow: 1px 1px limegreen;
+    user-select: none;
+
+}
+
+.lifestyle {
+    color: darkred;
+}
+
+.lifestyle-sub {
+    color: black;
+    text-shadow: 1px 1px darkred;
+    user-select: none;
+
+}
+
+.opinion {
+    color: dodgerblue;
+}
+
+.opinion-sub {
+    color: black;
+    text-shadow: 1px 1px dodgerblue;
+    user-select: none;
+}
+
+.tv {
+    color: goldenrod;
+}
+
+.tv-sub {
+    color: black;
+    text-shadow: 1px 1px goldenrod;
+    user-select: none;
+}
+
+.gaming {
+    color: darkcyan;
+}
+
+.gaming-sub {
+    color: black;
+    text-shadow: 1px 1px darkcyan;
+    user-select: none;
+}
+
+.art {
+    color: darkslateblue;
+}
+
+.art-sub {
+    color: black;
+    text-shadow: 1px 1px darkslateblue;
+    user-select: none;
+}
+
+.diy {
+    color: mediumvioletred;
+}
+
+.diy-sub {
+    color: black;
+    text-shadow: 1px 1px mediumvioletred;
+    user-select: none;
+}
+
+.leet {
+    color: lightgreen;
+}
+
+.leet-sub {
+    color: black;
+    text-shadow: 1px 1px lightgreen;
+    user-select: none;
+}
+
+.interviews {
+    color: sienna;
+}
+
+.interviews-sub {
+    color: black;
+    text-shadow: 1px 1px sienna;
+    user-select: none;
+}
+
+.podcasts {
+    color: navy;
+}
+
+.podcasts-sub {
+    color: black;
+    text-shadow: 1px 1px navy;
+    user-select: none;
+}
+
+.books {
+    color: darkgoldenrod;
+}
+
+.books-sub {
+    color: black;
+    text-shadow: 1px 1px darkgoldenrod;
+    user-select: none;
+}
+
+.reviews {
+    color: violet;
+}
+
+.reviews-sub {
+    color: black;
+    text-shadow: 1px 1px violet;
+    user-select: none;
+}
+
+.travel {
+    color: black;
+}
+
+.travel-sub {
+    color: black;
+    text-shadow: 1px 1px black;
+    user-select: none;
+}

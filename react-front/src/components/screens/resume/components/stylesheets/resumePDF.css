@@ -1,0 +1,13 @@
+.resume-wrapper {
+    position: center;
+    width: 90%;
+    height: calc(85% - 40px);
+    display: block;
+    /*margin-top: 4%;*/
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 0;
+    background-color: white;
+    border-style: ridge;
+    padding: 20px;
+}
