@@ -1,0 +1,41 @@
+.contact-content {
+    display: flex;
+    width: 100%;
+}
+
+.left-content {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: "Lora", serif;
+}
+
+.contact-typist-container {
+    font-family: "Consolas", monospace;
+    font-size: 200%;
+    height: auto;
+    font-weight: bolder;
+    margin: auto auto 2%;
+}
+
+.contact-header {
+    font-size: 175%;
+    margin: 2% auto 0;
+}
+
+.contact-body {
+    font-weight: normal;
+    font-size: 120%;
+    margin: 2% auto 0;
+    width: 75%;
+}
+
+.right-content {
+    width: 50%;
+    display: block;
+    position: center;
+    margin: auto;
+}
