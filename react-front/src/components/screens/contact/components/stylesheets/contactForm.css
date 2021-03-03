@@ -1,0 +1,20 @@
+.form-container {
+    width: 75%;
+    margin: auto;
+    /*position: center;*/
+}
+
+#emailInput {
+    display: flex;
+    width: 100%;
+}
+
+#subjectInput {
+    display: flex;
+    width: 100%;
+}
+
+#contact-text-input {
+    width: 100%;
+    display: flex;
+}
