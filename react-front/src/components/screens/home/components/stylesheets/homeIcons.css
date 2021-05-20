@@ -2,14 +2,18 @@
     width: 100%;
     text-align: center;
     height: auto;
-    margin: 15% auto;
+    /*margin-top: 5%;*/
+    position: fixed;
+    bottom: 5vh;
+    /*display: block;*/
+    /*margin-bottom: 5%;*/
 }
 
 .home-icon {
     fill: black;
     transition: 1s;
-    width: 3vw;
-    height: 3vw;
+    width: 4vh;
+    height: 4vh;
     padding: 5px;
 }
 

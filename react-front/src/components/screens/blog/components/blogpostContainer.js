@@ -21,7 +21,7 @@ function BlogpostContainer(props) {
         <OverlayScrollbarsComponent className={"posts-wrapper"} options={{
             className: "os-theme-light"
         }}>
-            <div style={{"margin": "8% auto 5%"}}>
+            <div style={{"margin": "0 auto 5%"}}>
 
                 <div className={"blogpost-container"}>
                     {posts !== null ? posts.map((post) => (

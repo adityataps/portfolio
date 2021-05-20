@@ -1,11 +1,11 @@
 .about-container {
     display: flex;
     width: 100%;
-    padding: 50px;
+    padding: 25px;
 }
 
 .picture-me {
-    width: 50%;
+    width: calc(50% - 25px);
     height: 100%;
 }
 
@@ -24,16 +24,17 @@
 
 .about-text {
     width: 50%;
-    height: 100%;
+    height: auto;
     margin: auto;
     font-family: "Lora", serif;
-    font-size: 120%;
+    font-size: 1.5vh;
     display: block;
     overflow: auto;
+    position: center;
 }
 
 .about-typist-container {
-    margin: 10vw auto 2vw;
+    margin: 0 auto 0;
     font-family: "Consolas", monospace;
     font-size: 1.5vw;
     height: auto;
@@ -41,7 +42,7 @@
 }
 
 .about-text-container {
+    margin-top: 2vw;
     width: 100%;
     height: auto;
-    margin: auto
 }

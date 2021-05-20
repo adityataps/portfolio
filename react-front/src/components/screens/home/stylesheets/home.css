@@ -7,3 +7,17 @@
     user-select: none;
     margin: 15vw auto 2vw;
 }
+
+.backgroundVideo {
+    position: absolute;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    width: auto;
+    user-select: none;
+    z-index: -5;
+    --animate-duration: 5s;
+    object-fit: cover;
+    --animate-delay: 6s;
+}

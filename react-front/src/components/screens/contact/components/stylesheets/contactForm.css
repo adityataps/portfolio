@@ -4,6 +4,11 @@
     /*position: center;*/
 }
 
+#nameInput {
+    display: flex;
+    width: 100%;
+}
+
 #emailInput {
     display: flex;
     width: 100%;
@@ -17,4 +22,9 @@
 #contact-text-input {
     width: 100%;
     display: flex;
+}
+
+.submit-button {
+
+    width: 100%;
 }

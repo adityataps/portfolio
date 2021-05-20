@@ -33,7 +33,8 @@ function Resume() {
                             ");
                         </Typist>
                     </div>
-                    <ResumePDF style={{height: "85%"}}/>
+                    <hr style={{width: "90%", "margin": "0 auto 20px"}}/>
+                    <ResumePDF style={{height: "80%"}}/>
                 </div>
 
 

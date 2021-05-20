@@ -1,5 +1,6 @@
 import React from 'react'
 import './stylesheets/projectContainer.css'
+import {OverlayScrollbarsComponent} from "overlayscrollbars-react";
 
 function ProjectContainer(props) {
 
@@ -13,12 +14,12 @@ function ProjectContainer(props) {
     return (
         <div className={"projects-container"}>
             {projects !== null ? projects.map((project) => (
-                <a key={project.date} className={"project-link"} href={project.link}>
-                    <div className={"project-cell"}>
+                <a key={project.date} className={"project-link"} href={project.link} target={"_blank"}>
+                    <OverlayScrollbarsComponent className={"project-cell"}>
                         <b className={"project-title"}> {project.title} </b>
                         <i className={"project-timeframe"}> {project.timeframe} </i>
                         <p className={"project-description"}> {project.description} </p>
-                    </div>
+                    </OverlayScrollbarsComponent>
                 </a>
             )): null}
         </div>

@@ -28,7 +28,6 @@ function Blog(props) {
             {(post && !specificPost) ?
                 <Redirect to={"/blog"} />
             : null}
-
             <BlogpostContainer posts={posts} />
         </PageWrapper>
     )

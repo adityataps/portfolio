@@ -34,7 +34,7 @@ function Contact() {
                             </Typist>
                         </div>
 
-                        <hr style={{width: "75%"}}/>
+                        <hr style={{width: "75%", "margin": "0 auto 20px"}}/>
 
                         <div className={"contact-header"}>
                             Got a project in mind? Let's work together.

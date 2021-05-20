@@ -32,6 +32,7 @@ function Projects(props) {
                             &nbsp;&lt;/b&gt;
                         </Typist>
                     </div>
+                    <hr style={{width: "90%", "margin": "0 auto 20px"}}/>
                     <ProjectContainer projects={props} />
                 </div>
             </ContentContainer>

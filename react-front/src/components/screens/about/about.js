@@ -9,6 +9,7 @@ import NavBar from "../../common/elements/navbar";
 import ContentContainer from "../../common/elements/contentContainer";
 import '../../common/elements/stylesheets/contentContainer.css'
 import '../../../../node_modules/animate.css/animate.css'
+import {OverlayScrollbarsComponent} from "overlayscrollbars-react";
 
 function About() {
 
@@ -30,7 +31,8 @@ function About() {
                             <img src={me} alt={""} className={"portrait"} />
                         </div>
                     </div>
-                    <div className={"about-text"}>
+
+                    <OverlayScrollbarsComponent className={"about-text"}>
 
                         <div className={"about-typist-container"}>
                             <Typist startDelay={800} cursor={{blink: true, element: '|'}}>
@@ -41,6 +43,8 @@ function About() {
                                 ");
                             </Typist>
                         </div>
+
+                        <hr  />
 
                         <div className={"about-text-container"}>
                             <p>
@@ -63,7 +67,7 @@ function About() {
                                 driven by the unpossible and seeking to be inspired by those around me.
                             </p>
                        </div>
-                    </div>
+                    </OverlayScrollbarsComponent>
 
                 </div>
 
