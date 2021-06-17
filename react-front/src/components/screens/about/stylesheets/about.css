@@ -4,15 +4,24 @@
     padding: 25px;
 }
 
+.about-container.mobile {
+    display: block;
+}
+
 .picture-me {
     width: calc(50% - 25px);
     height: 100%;
+}
+
+.picture-me.mobile {
+    width: 100%;
 }
 
 .img-container {
     justify-items: center;
     align-items: center;
     display: flex;
+    margin: auto;
     height: 100%;
     padding: 20px;
 }
@@ -23,26 +32,36 @@
 }
 
 .about-text {
-    width: 50%;
+    width: calc(50% -  25px);
     height: auto;
+    max-height: 100%;
     margin: auto;
     font-family: "Lora", serif;
-    font-size: 1.5vh;
-    display: block;
+    font-size: 100%;
+    display: flex;
     overflow: auto;
-    position: center;
+}
+
+.about-text.mobile {
+    width: 100%;
+    font-size: 3vw;
 }
 
 .about-typist-container {
-    margin: 0 auto 0;
+    margin: auto;
     font-family: "Consolas", monospace;
     font-size: 1.5vw;
     height: auto;
     font-weight: bolder;
 }
 
+.about-typist-container.mobile {
+    font-size: 3vw;
+    width: auto;
+}
+
 .about-text-container {
-    margin-top: 2vw;
+    /*margin-top: 2vw;*/
     width: 100%;
     height: auto;
 }

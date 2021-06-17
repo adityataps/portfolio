@@ -21,6 +21,7 @@
     "react-share": "^4.3.1",
     "react-transition-group": "^4.4.1",
     "react-typist": "^2.0.5",
+    "react-useanimations": "^2.0.6",
     "styled-components": "^5.2.1",
     "switch-css-transition-group": "^0.2.2",
     "web-vitals": "^1.1.0"

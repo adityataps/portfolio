@@ -6,18 +6,26 @@
     height: auto;
     font-weight: bolder;
     position: relative;
-    /*padding: 20px;*/
     display: flex;
 }
 
-.resume-typist-contents {
-     /*position: absolute;*/
-     /*bottom: 10px;*/
- }
+.resume-typist-container.mobile {
+    font-size: 4vw;
+}
 
 .resume-contents-container {
     width: 100%;
     display: block;
-    padding: 20px;
+    padding: 25px;
+    height: 100%;
 }
 
+.resume-contents-container.mobile {
+    height: 80vh;
+}
+
+.download-button {
+    position: relative;
+    right: 5%;
+    top: 100%;
+}

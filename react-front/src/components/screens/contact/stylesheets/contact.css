@@ -1,6 +1,12 @@
 .contact-content {
     display: flex;
     width: 100%;
+    padding: 25px;
+    height: 100%;
+}
+
+.contact-content.mobile {
+    display: block;
 }
 
 .left-content {
@@ -13,6 +19,10 @@
     font-family: "Lora", serif;
 }
 
+.left-content.mobile {
+    width: 100%;
+}
+
 .contact-typist-container {
     font-family: "Consolas", monospace;
     font-size: 200%;
@@ -21,9 +31,18 @@
     margin: auto auto 2%;
 }
 
+.contact-typist-container.mobile {
+    font-size: 4vw;
+    width: 100%;
+}
+
 .contact-header {
     font-size: 175%;
     margin: 2% auto 0;
+}
+
+.contact-header.mobile {
+    font-size: 300%;
 }
 
 .contact-body {
@@ -33,9 +52,22 @@
     width: 75%;
 }
 
+.contact-body.mobile {
+    font-size: 250%;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
 .right-content {
     width: 50%;
     display: block;
     position: center;
     margin: auto;
+    height: auto;
+    max-height: 100%;
+}
+
+.right-content.mobile {
+    width: 100%;
+    overflow: hidden;
 }

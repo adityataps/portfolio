@@ -1,12 +1,13 @@
-import React  from 'react'
+import React, {useEffect, useState} from 'react'
 import './stylesheets/blogpostContainer.css'
 import parse from 'html-react-parser'
 import BlogpostTopic from './blogpostTopic'
-import { NavLink } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 import 'overlayscrollbars/css/OverlayScrollbars.css'
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import ShareContainer from "./blogpostShareContainer";
+import bgImg from "../../../media/switz.jpg";
 
 function BlogpostContainer(props) {
 
@@ -17,19 +18,44 @@ function BlogpostContainer(props) {
         posts = unsortedPosts.sort((first, second) => second.date.localeCompare(first.date))
     }
 
-    return (
-        <OverlayScrollbarsComponent className={"posts-wrapper"} options={{
-            className: "os-theme-light"
-        }}>
-            <div style={{"margin": "0 auto 5%"}}>
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const isMobile = windowSize <= 800
 
-                <div className={"blogpost-container"}>
+    const handleResize = () => {
+        setWindowSize(window.innerWidth)
+    }
+
+    const imgs = [bgImg];
+    useEffect(() => {
+
+        imgs.forEach((bgImg) => {
+            new Image().src = bgImg.fileName;
+        })
+
+        window.addEventListener('resize', handleResize)
+
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+
+    }, [])
+
+    return (
+        <OverlayScrollbarsComponent
+            className={`${posts !== null && unsortedPosts.length <= 1 ? "" : "condensed"} posts-wrapper ${isMobile ? "mobile" : ""}`}
+            options={{
+                overflowBehavior: {x: "hidden"},
+                className: "os-theme-dark"
+        }}>
+            <div style={{"margin": "0 auto 0"}}>
+
+                <div className={`${isMobile ? "mobile" : ""} blogpost-container`}>
                     {posts !== null ? posts.map((post) => (
                         <div key={post.date}>
                             {
                                 unsortedPosts.length <= 1 ?
                                     // <div className={"blogpost-container"}>
-                                    <BuildPost props={post} />
+                                    <BuildPost props={post} mobile={isMobile} />
                                     // </div>
                                     :
                                     // <div className={"blogpost-container condensed"}>
@@ -48,9 +74,16 @@ function BlogpostContainer(props) {
 
 function BuildPost(props) {
     let post = props.props
+    let isMobile = props.mobile
+
     if (post) {
         return (
-            <div className={"single-post-container"}>
+
+            <div className={`${isMobile ? "mobile" : ""} single-post-container`}>
+
+                <Link to={"/blog"} className={"go-back"}>
+                    &#x21DC;
+                </Link>
 
                 <div className={"post-topic"}>
                     <BlogpostTopic topic={post.topic} subtopic={post.subtopic} />
@@ -64,15 +97,19 @@ function BuildPost(props) {
                 {/*    Share*/}
                 {/*</NavLink>*/}
 
-                <ShareContainer />
+                <div style={{display: `${isMobile ? "block" : "flex"}`}}>
 
-                <div className={"post-date"}>
-                    Last edited on&nbsp;
-                    {new Intl.DateTimeFormat("en-GB", {
-                        year: "numeric",
-                        month: "long",
-                        day: "2-digit"
-                    }).format(new Date(post.date))}
+
+                    <div className={"post-date"}>
+                        Last edited on&nbsp;
+                        {new Intl.DateTimeFormat("en-GB", {
+                            year: "numeric",
+                            month: "long",
+                            day: "2-digit"
+                        }).format(new Date(post.date))}
+                    </div>
+
+                    <ShareContainer />
                 </div>
 
                 <hr style={{margin: "25px auto 50px"}}/>

@@ -11,3 +11,10 @@
     border-style: ridge;
     padding: 20px;
 }
+
+.content-container.mobile {
+    height: auto;
+    display: block;
+    overflow: auto;
+    margin-bottom: 4%;
+}

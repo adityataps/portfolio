@@ -4,10 +4,19 @@
     color: black;
     text-align: center;
     font-family: "Poiret One", sans-serif;
-    font-size: 1.5vw;
-    height: 20px;
+    font-size: 2vw;
+    height: auto;
     text-shadow: 1px 0 black;
     user-select: none;
+}
+
+.browser-links.mobile {
+    margin: 2vh auto 0;
+    display: block;
+}
+
+.mobile-br {
+    margin-bottom: 4vh;
 }
 
 .app-link {
@@ -18,13 +27,17 @@
     margin-left: 15px;
     margin-right: 15px;
     position: relative;
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
 }
 
 .app-link:hover {
     transition: 1s;
     color: crimson;
-    text-shadow: 3px 2px black;
+    text-shadow: 4px 4px black;
+}
+
+.app-link.mobile {
+    font-size: 5vw;
 }
 
 .animate__animated.animate__fadeIn {

@@ -1,20 +1,22 @@
 .icon-container {
     width: 100%;
-    text-align: center;
+    justify-content: center;
     height: auto;
     /*margin-top: 5%;*/
     position: fixed;
     bottom: 5vh;
-    /*display: block;*/
+    display: flex;
+    margin: auto;
+    align-items: baseline;
     /*margin-bottom: 5%;*/
 }
 
 .home-icon {
     fill: black;
     transition: 1s;
-    width: 4vh;
-    height: 4vh;
     padding: 5px;
+    width: 50px;
+    height: 50px;
 }
 
 .home-icon:hover {

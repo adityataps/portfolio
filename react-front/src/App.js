@@ -12,26 +12,13 @@ import Projects from "./components/screens/projects/projects";
 import Resume from "./components/screens/resume/resume";
 import Test from "./components/screens/test/test";
 import axios from "axios";
-// import arc from './components/media/arc.jpg'
-// import beach from './components/media/barca-beach.jpg'
-// import city from './components/media/barca-city.jpg'
-// import goth from './components/media/gothic-q.jpg'
-// import me from './components/media/me.png'
-// import name from './components/media/name.png'
-// import switz from './components/media/switz.jpg'
+import NavBar from "./components/common/elements/navbar";
 
 function App() {
 
     const [data, setData] = useState({ posts: null, projects: null})
-    // const imgs = [
-    //     arc, beach, city, goth, me, name, switz
-    // ]
 
     useEffect(() => {
-
-        // imgs.forEach((picture) => {
-        //     new Image().src = picture.fileName
-        // })
 
         const fetchAll = async () => {
             const gotPosts = await axios(
@@ -86,31 +73,37 @@ function AnimationApp(props) {
                             )} />
                             <Route path={"/about"} render={() => (
                                 <DesktopScreen>
+                                    <NavBar style={{position: "sticky"}} />
                                     <About />
                                 </DesktopScreen>
                             )} />
                             <Route path={"/blog/:post"} exact render={() => (
                                 <DesktopScreen>
+                                    <NavBar style={{position: "sticky"}} />
                                     <Blog data={data.posts}/>
                                 </DesktopScreen>
                             )} />
                             <Route path={"/blog"} render={() => (
                                 <DesktopScreen>
+                                    <NavBar style={{position: "sticky"}} />
                                     <Blog data={data.posts}/>
                                 </DesktopScreen>
                             )} />
                             <Route path={"/projects"} render={() => (
                                 <DesktopScreen>
+                                    <NavBar style={{position: "sticky"}} />
                                     <Projects data={data.projects}/>
                                 </DesktopScreen>
                             )} />
                             <Route path={"/resume"} render={() => (
                                 <DesktopScreen>
+                                    <NavBar style={{position: "sticky"}} />
                                     <Resume />
                                 </DesktopScreen>
                             )} />
                             <Route path={"/contact"} render={() => (
                                 <DesktopScreen>
+                                    <NavBar style={{position: "sticky"}} />
                                     <Contact />
                                 </DesktopScreen>
                             )} />

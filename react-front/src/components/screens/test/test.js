@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
+import './stylesheets/test.css'
+import UseAnimations from "react-useanimations";
+import icon from 'react-useanimations/lib/facebook'
 
-function Test() {
-    return(
+export default function Test() {
+
+    return (
         <div>
-            test
+            <UseAnimations animation={icon} size={100} className={"animation-test"} strokeColor={"white"}/>
         </div>
     )
-}
 
-export default Test
+}

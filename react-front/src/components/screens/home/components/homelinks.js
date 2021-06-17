@@ -37,4 +37,30 @@ function HomeLinks() {
     )
 }
 
+export function HomeLinksMobile() {
+    return(
+        <div className={"mobile browser-links"}>
+            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.6s'}} to={"/about"}>
+                about
+            </NavLink>
+            <br className={"mobile-br"}/>
+            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.9s'}} to={"/blog"}>
+                blog
+            </NavLink>
+            <br className={"mobile-br"}/>
+            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.2s'}} to={"/projects"}>
+                projects
+            </NavLink>
+            <br className={"mobile-br"}/>
+            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.5s'}} to={"/resume"}>
+                résumé
+            </NavLink>
+            <br className={"mobile-br"}/>
+            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.8s'}} to={"/contact"}>
+                contact
+            </NavLink>
+        </div>
+    )
+}
+
 export default HomeLinks

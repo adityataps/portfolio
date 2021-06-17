@@ -1,11 +1,19 @@
 .posts-wrapper {
     overflow: auto;
     width: 75%;
-    height: 75%;
+    height: 100%;
     /*position: absolute !important;*/
     /*top: 0;*/
-    margin: 4% auto 0;
+    margin: 0 auto 0;
     z-index: 0;
+}
+
+.posts-wrapper.mobile {
+    width: 100%;
+}
+
+.posts-wrapper.condensed {
+    margin-top: 4%;
 }
 
 .blogpost-container {
@@ -18,6 +26,7 @@
     background-color: rgba(255, 255, 255, 0.92);
     border-style: ridge;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 .blogpost-container.condensed {
@@ -41,6 +50,10 @@
     height: 100%;
 }
 
+.single-post-container.mobile {
+    width: 100%;
+}
+
 .single-post-container.condensed {
     margin: 5px auto 40px;
 }
@@ -49,7 +62,7 @@
     font-family: "Poiret One", sans-serif;
     font-weight: bolder;
     text-shadow: 2px 1px black;
-    font-size: 2.5vw;
+    font-size: 200%;
     margin: 5px auto 0
 }
 
@@ -92,22 +105,31 @@
     margin-top: 0;
 }
 
-.share-post {
-    cursor: grabbing;
-    float: right;
-    font-weight: bold;
-    color: maroon;
-    font-size: 90%;
-    margin-top: 20px;
-    margin-bottom: -20px;
-}
+/*.share-post {*/
+/*    cursor: grabbing;*/
+/*    float: right;*/
+/*    font-weight: bold;*/
+/*    color: maroon;*/
+/*    font-size: 90%;*/
+/*    margin-top: 0px;*/
+/*    margin-bottom: 0px;*/
+/*}*/
 
 .post-content {
     font-family: "Lora", serif;
-    font-size: 110%;
+    font-size: 90%;
 }
 
 .condensed-card {
     text-decoration: none !important;
     color: black;
+}
+
+.go-back {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    text-decoration: none;
+    color: crimson;
+    font-size: 30px;
 }

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { useParams, Redirect } from 'react-router-dom';
 import bgImg from "../../media/gothic-q.jpg";
 import BlogpostContainer from "./components/blogpostContainer";
+import {OverlayScrollbarsComponent} from "overlayscrollbars-react";
 
 function Blog(props) {
 
@@ -23,24 +24,15 @@ function Blog(props) {
     }
 
     return(
-        <PageWrapper>
-            <NavBar />
+        <OverlayScrollbarsComponent style={{"background-image": `url(${bgImg})`}} className={"page-wrapper"}>
+            {/*<NavBar />*/}
             {(post && !specificPost) ?
                 <Redirect to={"/blog"} />
             : null}
             <BlogpostContainer posts={posts} />
-        </PageWrapper>
+        </OverlayScrollbarsComponent>
     )
 }
 
-const PageWrapper = styled.div`
-  background-image: url(${bgImg});
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
 
 export default Blog

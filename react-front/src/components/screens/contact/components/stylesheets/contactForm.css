@@ -1,7 +1,18 @@
 .form-container {
-    width: 75%;
+    width: 90%;
+    position: center;
+    display: block;
     margin: auto;
-    /*position: center;*/
+    align-self: center;
+    height: 100%;
+    /*background-color: green;*/
+}
+
+.form-contents {
+    height: auto;
+    margin: auto;
+    display: block;
+    position: center;
 }
 
 #nameInput {
@@ -25,6 +36,5 @@
 }
 
 .submit-button {
-
     width: 100%;
 }
