@@ -3,7 +3,7 @@ import "./stylesheets/home.css"
 import HomeLinks, { HomeLinksMobile } from "./components/homelinks";
 import HomeIcons from "./components/homeIcons";
 import name from "../../media/name.png"
-import HomeVid from "../../media/home-video.mp4"
+import HomeVid from "../../media/home-video.webm"
 import '../../../../node_modules/animate.css/animate.css'
 // import {NavLink} from "react-router-dom";
 
@@ -29,7 +29,7 @@ function Home() {
 
         <div className={"page"} style={{"overflow": "hidden"}}>
 
-            <div style={{opacity: "50%"}}>
+            <div style={{opacity: "50%", filter: "blur(4px)"}}>
                 <video className={`${isMobile ? "mobile" : ""} backgroundVideo animate__animated animate__fadeIn animate__delay-1s`}
                        src={HomeVid}
                        autoPlay={true}
