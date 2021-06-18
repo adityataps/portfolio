@@ -22,10 +22,10 @@ function App() {
 
         const fetchAll = async () => {
             const gotPosts = await axios(
-                "http://127.0.0.1:8000/api/blogposts/"
+                process.env.PUBLIC_URL + "/api/blogposts/"
             )
             const gotProjects = await axios(
-                "http://127.0.0.1:8000/api/projects/"
+                process.env.PUBLIC_URL + "/api/projects/"
             )
 
             setData({posts: gotPosts.data, projects: gotProjects.data})
