@@ -134,6 +134,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'frontend', "build", "static"),
 )
 
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'frontend', '')
+
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]

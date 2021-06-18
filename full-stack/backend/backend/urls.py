@@ -13,8 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blogpost/', include('blogpost.urls'))
 """
+# from . import settings
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.generic import TemplateView
 from rest_framework import routers
 from blogpost import views as blogviews
 from project import views as projectviews
@@ -28,5 +30,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('tinymce/', include('tinymce.urls')),
-    path("", index, name="index")
-]
+    re_path('(^(?!(api|admin)).*$)',
+            TemplateView.as_view(template_name="build/index.html")),
+    ]
+
+# This is only needed when using runserver.
+# if settings.DEBUG:
+#     urlpatterns += [
+#                        url(
+#                            r'^media/(?P<path>.*)$', static_views.serve,  # NOQA
+#                            {'document_root': settings.MEDIA_ROOT,
+#                             'show_indexes': True}
+#                        ),
+#                    ] + staticfiles_urlpatterns()  # NOQA
