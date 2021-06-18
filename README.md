@@ -15,7 +15,7 @@ as a full-stack webapp developer.
 - Hosted on AWS EC2
 
 ## Logs
-### June 17, 2021:
+### June 18, 2021:
 First time deploying newly made website. Excited! 
 Will have to redo the blogs API behind the scenes. 
 
