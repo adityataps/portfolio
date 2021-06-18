@@ -36,6 +36,7 @@ function Home() {
                        loop={true}
                        muted={true}
                        playsInline={true}
+                       type='video/webm; codecs="vp8, vorbis"'
                 />
             </div>
 
