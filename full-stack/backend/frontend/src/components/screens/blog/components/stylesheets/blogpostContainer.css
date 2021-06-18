@@ -1,0 +1,145 @@
+.posts-wrapper {
+    overflow: auto;
+    width: 75%;
+    height: 100%;
+    /*position: absolute !important;*/
+    /*top: 0;*/
+    margin: 0 auto 0;
+    z-index: 0;
+}
+
+.posts-wrapper.mobile {
+    width: 100%;
+}
+
+.posts-wrapper.condensed {
+    margin-top: 4%;
+}
+
+.blogpost-container {
+    position: center;
+    width: 100%;
+    min-height: 50%;
+    display: block;
+    /*margin: 4% auto 0;*/
+    z-index: -4;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-style: ridge;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.blogpost-container.condensed {
+    border-color: dimgray;
+    transition: 1s;
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
+    padding: 5px 20px 25px;
+    width: 75%;
+}
+
+.blogpost-container.condensed:hover {
+    border-color: crimson;
+    transition: 1s;
+}
+
+.single-post-container {
+    margin: 100px auto 100px;
+    width: 75%;
+    height: 100%;
+}
+
+.single-post-container.mobile {
+    width: 100%;
+}
+
+.single-post-container.condensed {
+    margin: 5px auto 40px;
+}
+
+.post-title {
+    font-family: "Poiret One", sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 1px black;
+    font-size: 200%;
+    margin: 5px auto 0
+}
+
+.post-title.condensed {
+    font-size: 175%;
+    margin: 0 auto 0;
+    text-shadow: 1px 0 black;
+    color: black !important;
+    transition: 1s !important;
+}
+
+.post-title.condensed:hover {
+    color: crimson !important;
+    transition: 1s !important;
+}
+
+.post-topic {
+    display: flex;
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 1px;
+    font-size: 100%;
+}
+
+.post-topic.condensed {
+    margin-left: 1px;
+    font-size: 75%;
+}
+
+.post-date {
+    color: dimgray;
+    font-size: 90%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-left: 1px;
+}
+
+.post-date.condensed {
+    margin-top: 0;
+}
+
+/*.share-post {*/
+/*    cursor: grabbing;*/
+/*    float: right;*/
+/*    font-weight: bold;*/
+/*    color: maroon;*/
+/*    font-size: 90%;*/
+/*    margin-top: 0px;*/
+/*    margin-bottom: 0px;*/
+/*}*/
+
+.post-content {
+    font-family: "Lora", serif;
+    font-size: 90%;
+}
+
+.condensed-card {
+    text-decoration: none !important;
+    color: black;
+}
+
+.go-back {
+    transition: 1s;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    text-decoration: none;
+    color: crimson;
+    font-size: 20px;
+    font-family: "Poiret One", sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+}
+
+.go-back:hover {
+    color: crimson;
+    text-shadow: 3px 1px black;
+    transition: 1s;
+}

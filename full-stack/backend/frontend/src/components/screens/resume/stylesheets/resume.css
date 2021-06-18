@@ -1,0 +1,50 @@
+.resume-typist-container {
+    margin: 20px auto 0 5%;
+    width: 100%;
+    font-family: "Consolas", monospace;
+    font-size: 2vw;
+    height: auto;
+    font-weight: bolder;
+    position: relative;
+    display: flex;
+}
+
+.resume-typist-container.mobile {
+    font-size: 4vw;
+}
+
+.resume-contents-container {
+    width: 100%;
+    display: block;
+    padding: 25px;
+    height: 100%;
+}
+
+.resume-contents-container.mobile {
+    height: 80vh;
+}
+
+.download-button {
+    position: relative;
+    right: 5%;
+    top: 100%;
+}
+
+.resume-iframe {
+    position: center;
+    width: 90%;
+    height: 80%;
+    display: block;
+    /*margin-top: 4%;*/
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 0;
+    background-color: white;
+    border-style: ridge;
+    padding: 20px;
+}
+
+.resume-iframe.mobile {
+    height: 90%;
+    width: 100%;
+}
