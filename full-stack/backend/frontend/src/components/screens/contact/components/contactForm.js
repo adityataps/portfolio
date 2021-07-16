@@ -34,8 +34,10 @@ function ContactForm() {
 
                 <Form.Group controlId={"contact-text-input"}>
                     <Form.Label> Message </Form.Label>
-                    <Form.Control size={"sm"} as={"textarea"} rows={4} placeholder={"let's link up!"} />
+                    <Form.Control size={"sm"} as={"textarea"} rows={1} placeholder={"let's link up!"} />
                 </Form.Group>
+
+                <br />
 
                 <Button className={"submit-button"} variant={"outline-primary"}> Submit </Button>
 

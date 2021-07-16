@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './stylesheets/resume.css'
+import {NavLink} from "react-router-dom";
 import ResumePDF from "./components/resumePDF";
 import NavBar from "../../common/elements/navbar";
 import styled from "styled-components";
@@ -64,10 +65,13 @@ function Resume() {
                     <hr style={{width: "90%", "margin": "5px auto 15px"}}/>
 
 
+                    {isMobile ? <NavLink to={ResumeFile} target={"_blank"} className={"download-link"}>
+                        Download
+                    </NavLink>
+                        : <iframe id={"pdf"} allowFullScreen src={ResumeFile} className={`${isMobile ? "mobile" : ""} resume-iframe`} />}
+                    {/*<iframe id={"pdf"} allowFullScreen src={ResumeFile} className={`${isMobile ? "mobile" : ""} resume-iframe`} />*/}
 
 
-                    {/*<ResumePDF style={{height: "80%"}}/>*/}
-                    <iframe id={"pdf"} allowFullScreen src={ResumeFile} className={`${isMobile ? "mobile" : ""} resume-iframe`} />
 
                 </div>
 

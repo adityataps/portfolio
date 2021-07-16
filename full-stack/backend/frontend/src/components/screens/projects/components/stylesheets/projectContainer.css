@@ -14,9 +14,11 @@
 }
 
 .projects-container.mobile {
+    width: 100%;
     height: auto;
     align-content: start;
     align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
 }
 
 .project-cell {

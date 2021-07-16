@@ -2,6 +2,7 @@ import React from 'react'
 import './stylesheets/homelinks.css'
 import { NavLink } from 'react-router-dom'
 import "../../../../../node_modules/animate.css/animate.css"
+import ResumeLink from "../../resume/components/Resume.pdf"
 
 function HomeLinks() {
     return(
@@ -52,7 +53,7 @@ export function HomeLinksMobile() {
                 projects
             </NavLink>
             <br className={"mobile-br"}/>
-            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.5s'}} to={"/resume"}>
+            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.5s'}} to={ResumeLink}>
                 résumé
             </NavLink>
             <br className={"mobile-br"}/>

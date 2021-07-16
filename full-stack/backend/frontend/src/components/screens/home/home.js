@@ -40,6 +40,14 @@ function Home() {
                 />
             </div>
 
+            {/*if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {*/}
+            {/*    <img src={name} alt={"aditya tapshalkar"} className={`${isMobile ? "mobile" : ""} name animate__animated animate__fadeIn animate__delay-1s`} style={{'--animate-delay': '0.2s'}} />*/}
+            {/*}*/}
+
+            {/*{window.matchMedia('(prefers-color-scheme: light)') ?*/}
+            {/*<img src={name} alt={"aditya tapshalkar"} className={`${isMobile ? "mobile" : ""} name animate__animated animate__fadeIn animate__delay-1s`} style={{'--animate-delay': '0.2s'}} />*/}
+            {/*: <div />}*/}
+
             <img src={name} alt={"aditya tapshalkar"} className={`${isMobile ? "mobile" : ""} name animate__animated animate__fadeIn animate__delay-1s`} style={{'--animate-delay': '0.2s'}} />
 
             {isMobile ?

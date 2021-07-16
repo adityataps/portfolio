@@ -25,7 +25,7 @@
     z-index: -4;
     background-color: rgba(255, 255, 255, 0.92);
     border-style: ridge;
-    padding: 20px;
+    padding: 10px;
     overflow-x: hidden;
 }
 
@@ -35,7 +35,7 @@
     min-height: 0;
     height: 100%;
     overflow: hidden;
-    padding: 5px 20px 25px;
+    padding: 5px 10px 25px;
     width: 75%;
 }
 
@@ -61,17 +61,18 @@
 .post-title {
     font-family: "Poiret One", sans-serif;
     font-weight: bolder;
-    text-shadow: 2px 1px black;
+    /*text-shadow: 2px 1px black;*/
     font-size: 200%;
     margin: 5px auto 0
 }
 
 .post-title.condensed {
-    font-size: 175%;
+    font-size: 125%;
     margin: 0 auto 0;
-    text-shadow: 1px 0 black;
+    /*text-shadow: 1px 0 black;*/
     color: black !important;
     transition: 1s !important;
+    /*font-family: "Lora", serif;*/
 }
 
 .post-title.condensed:hover {

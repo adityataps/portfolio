@@ -6,6 +6,7 @@ import {OverlayScrollbarsComponent} from "overlayscrollbars-react";
 import UseAnimations from "react-useanimations";
 import menu2 from 'react-useanimations/lib/menu2'
 import bgImg from "../../media/barca-city.jpg";
+import ResumeFile from "../../screens/resume/components/Resume.pdf"
 
 function NavBarDesktop() {
     return (
@@ -75,7 +76,7 @@ function NavBarMobile() {
                         <NavLink to={"/about"} className={"nav-link animate__animated animate__fadeIn animate__delay-1s"} activeClassName={"selected"} style={{'--animate-delay': '0.4s'}}> about </NavLink>
                         <NavLink to={"/blog"} className={"nav-link blog animate__animated animate__fadeIn animate__delay-1s"} activeClassName={"selected"} style={{'--animate-delay': '0.6s'}}> blog </NavLink>
                         <NavLink to={"/projects"} className={"nav-link animate__animated animate__fadeIn animate__delay-1s"} activeClassName={"selected"} style={{'--animate-delay': '0.8s'}}> projects </NavLink>
-                        <NavLink to={"/resume"} className={"nav-link animate__animated animate__fadeIn animate__delay-1s"} activeClassName={"selected"} style={{'--animate-delay': '1.0s'}}> résumé </NavLink>
+                        <NavLink to={ResumeFile} target={"_blank"} className={"nav-link animate__animated animate__fadeIn animate__delay-1s"} activeClassName={"selected"} style={{'--animate-delay': '1.0s'}}> résumé </NavLink>
                         <NavLink to={"/contact"} className={"nav-link animate__animated animate__fadeIn animate__delay-1s"} activeClassName={"selected"} style={{'--animate-delay': '1.2s'}}> contact </NavLink>
                     </div>
                 }

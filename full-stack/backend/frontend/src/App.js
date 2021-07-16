@@ -23,9 +23,11 @@ function App() {
         const fetchAll = async () => {
             const gotPosts = await axios(
                 process.env.PUBLIC_URL + "/api/blogposts/"
+
             )
             const gotProjects = await axios(
                 process.env.PUBLIC_URL + "/api/projects/"
+
             )
 
             setData({posts: gotPosts.data, projects: gotProjects.data})
@@ -95,7 +97,8 @@ function AnimationApp(props) {
                                     <Projects data={data.projects}/>
                                 </DesktopScreen>
                             )} />
-                            <Route path={"/resume"} render={() => (
+                            <Route path={"/resume"} render={
+                                () => (
                                 <DesktopScreen>
                                     <NavBar style={{position: "sticky"}} />
                                     <Resume />

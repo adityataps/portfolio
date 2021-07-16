@@ -36,7 +36,7 @@ function Contact() {
             {/*<NavBar />*/}
             <ContentContainer>
 
-                <div className={`${isMobile ? "mobile" : ""} contact-content`}>
+                <div className={`${isMobile ? "mobile" : ""} contact-content`} style={{padding: "10px"}}>
                     <div className={`${isMobile ? "mobile" : ""} left-content`}>
 
                         <div className={`${isMobile ? "mobile" : ""} contact-typist-container`}>

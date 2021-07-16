@@ -21,7 +21,8 @@
 }
 
 .resume-contents-container.mobile {
-    height: 80vh;
+    height: auto;
+    padding: 20px;
 }
 
 .download-button {
@@ -47,4 +48,12 @@
 .resume-iframe.mobile {
     height: 90%;
     width: 100%;
+}
+
+.download-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: crimson;
+    font-family: "Lora", serif;
 }

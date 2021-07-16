@@ -135,6 +135,8 @@ function BuildCondensed(props) {
                         <BlogpostTopic topic={post.topic} subtopic={post.subtopic}/>
                     </div>
 
+                    {/*<br />*/}
+
                     <div className={"post-title condensed"}>
                         {post.title}
                     </div>
