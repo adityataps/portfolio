@@ -36,8 +36,9 @@ function Home() {
                        loop={true}
                        muted={true}
                        playsInline={true}
-                       type='video/webm; codecs="vp8, vorbis"'
-                />
+                >
+                    <source type='video/webm; codecs="vp8, vorbis"' />
+                </video>
             </div>
 
             {/*if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {*/}
