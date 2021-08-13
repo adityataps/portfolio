@@ -28,7 +28,7 @@ if os.path.isfile(dotenv_file):
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['54.91.14.176', 'localhost', '127.0.0.1']
 
@@ -129,9 +129,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'frontend', "build", "static"),
+     os.path.join(BASE_DIR, 'frontend', "build", "static"),
+#     os.path.join(BASE_DIR, 'static'),
 )
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'frontend', '')

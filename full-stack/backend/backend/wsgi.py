@@ -9,9 +9,12 @@ https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 
 import os
 import sys
-from django.core.wsgi import get_wsgi_application
+# from django.core.wsgi import get_wsgi_application
 
-sys.path.append("../")
-os.environ.setdefault("PYTHON_EGG_CACHE", "../egg_cache")
+sys.path.append("/opt/bitnami/portfolio/full-stack/backend")
+sys.path.append("/opt/bitnami/portfolio/venv/lib/python3.8/site-packages")
+os.environ.setdefault("PYTHON_EGG_CACHE", "/opt/bitnami/portfolio/full-stack/backend/egg_cache")
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+
+from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
