@@ -34,7 +34,7 @@ function ProjectContainer(props) {
     }
 
     return (
-        <div className={`${isMobile ? "mobile" : ""} projects-container`} style={{"grid-template-rows": `repeat(${projects.length - 1 || 1}, 10vh) 250px`}}>
+        <div className={`${isMobile ? "mobile" : ""} projects-container`} style={{"grid-auto-rows": `${isMobile ? "200px" : "200px"}`}}>
             {projects !== [] ? projects.map((project) => (
                 <a key={project.date} className={"project-link"} href={project.link} target={"_blank"}>
                     <OverlayScrollbarsComponent className={"project-cell"}>

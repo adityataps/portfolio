@@ -6,7 +6,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /*grid-auto-rows: auto;*/
-    grid-gap: 180px 10px;
+    grid-gap: 20px 10px;
+    /*row-gap: 150px;*/
     margin-right: auto;
     margin-left: auto;
     z-index: 0;
@@ -18,6 +19,7 @@
     height: auto;
     align-content: start;
     align-items: start;
+    row-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
 }
 
