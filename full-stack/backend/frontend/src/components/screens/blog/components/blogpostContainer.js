@@ -141,7 +141,7 @@ function BuildCondensed(props) {
                         {post.title}
                     </div>
 
-                    <div className={"post-date condensed"}>
+                    <div className={`post-date condensed`}>
                         Last edited on&nbsp;
                         {new Intl.DateTimeFormat("en-GB", {
                             year: "numeric",
