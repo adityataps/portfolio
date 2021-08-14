@@ -30,7 +30,14 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['54.91.14.176', 'localhost', '127.0.0.1', 'd9x4a5tp69vy6.cloudfront.net', '18.214.201.82']
+ALLOWED_HOSTS = [
+'54.91.14.176',
+ 'localhost',
+  '127.0.0.1',
+   'tapshalkar.xyz',
+    'd9x4a5tp69vy6.cloudfront.net',
+     '18.214.201.82'
+     ]
 
 
 # Application definition
