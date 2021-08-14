@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
  'localhost',
   '127.0.0.1',
    'tapshalkar.xyz',
+    'www.tapshalkar.xyz',
     'd9x4a5tp69vy6.cloudfront.net',
      '18.214.201.82'
      ]
