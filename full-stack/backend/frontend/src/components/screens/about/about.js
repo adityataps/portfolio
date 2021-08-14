@@ -66,22 +66,26 @@ function About() {
 
                         <div className={"about-text-container"}>
                             <p>
-                                I'm a developer based in Atlanta, GA, studying artificial intelligence
-                                and user-centric programming at the Georgia Institute of Technology,
-                                with a deep penchant for web development.
+                                👨‍💻 I'm a developer based in Atlanta, GA. I am pursuing my Master's in
+                                Interactive Intelligence at Georgia Tech.
                                 <br/>
                                 <br/>
-                                In my study I have worked with revolutionary technology to stitch
-                                panoramas using Computer Vision, prototype front-end wireframes for
-                                web and mobile applications, and even collaborated with peers to construct a
-                                chest X-Ray cardiomegaly and chest neoplasm detector, among other projects.
+                                🎓 I completed my Bachelor's in Computer Science at Georgia Tech, with concentrations
+                                in Artificial Intelligence and User Experience and a minor in Health and Medical
+                                Sciences.
                                 <br/>
                                 <br/>
-                                I am intrigued by design, human-computer interaction, traveling, fine art,
-                                music, photography, podcasts, and cooking.
+                                🤖 I love to code in my free time. In the past I've trained an Object Detection model
+                                on road signs with Darknet YOLO, stitched photos into panoramas using Computer Vision,
+                                prototyped front-end wireframes for web and mobile apps, and constructed a chest X-Ray
+                                cardiomegaly and chest neoplasm detector.
                                 <br/>
                                 <br/>
-                                I have been fortunate to be able to do what I love,
+                                🎮 When I'm not coding, I enjoy gaming, cooking, listening to music and podcasts,
+                                travelling, mentoring, and admiring fine art and design.
+                                <br/>
+                                <br/>
+                                🤓 I am a geek at heart and I love to do what I do,
                                 driven by the unpossible and seeking to be inspired by those around me.
                             </p>
                         </div>

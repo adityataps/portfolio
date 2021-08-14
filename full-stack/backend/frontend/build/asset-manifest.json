@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.0379d27b.chunk.css",
-    "main.js": "./static/js/main.63618c19.chunk.js",
-    "main.js.map": "./static/js/main.63618c19.chunk.js.map",
+    "main.css": "./static/css/main.78f0200e.chunk.css",
+    "main.js": "./static/js/main.5d23821b.chunk.js",
+    "main.js.map": "./static/js/main.5d23821b.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.80c243c0.js",
     "runtime-main.js.map": "./static/js/runtime-main.80c243c0.js.map",
     "static/css/2.5c10390e.chunk.css": "./static/css/2.5c10390e.chunk.css",
-    "static/js/2.3c8c5b41.chunk.js": "./static/js/2.3c8c5b41.chunk.js",
-    "static/js/2.3c8c5b41.chunk.js.map": "./static/js/2.3c8c5b41.chunk.js.map",
+    "static/js/2.46aa52b9.chunk.js": "./static/js/2.46aa52b9.chunk.js",
+    "static/js/2.46aa52b9.chunk.js.map": "./static/js/2.46aa52b9.chunk.js.map",
     "static/js/3.c7d875c5.chunk.js": "./static/js/3.c7d875c5.chunk.js",
     "static/js/3.c7d875c5.chunk.js.map": "./static/js/3.c7d875c5.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.5c10390e.chunk.css.map": "./static/css/2.5c10390e.chunk.css.map",
-    "static/css/main.0379d27b.chunk.css.map": "./static/css/main.0379d27b.chunk.css.map",
-    "static/js/2.3c8c5b41.chunk.js.LICENSE.txt": "./static/js/2.3c8c5b41.chunk.js.LICENSE.txt",
-    "static/media/Resume.d987d42e.pdf": "./static/media/Resume.d987d42e.pdf",
+    "static/css/main.78f0200e.chunk.css.map": "./static/css/main.78f0200e.chunk.css.map",
+    "static/js/2.46aa52b9.chunk.js.LICENSE.txt": "./static/js/2.46aa52b9.chunk.js.LICENSE.txt",
+    "static/media/Resume.1afe50e7.pdf": "./static/media/Resume.1afe50e7.pdf",
     "static/media/arc.d43125e8.jpg": "./static/media/arc.d43125e8.jpg",
     "static/media/barca-beach.1a0f2d2e.jpg": "./static/media/barca-beach.1a0f2d2e.jpg",
     "static/media/barca-city.54e295ed.jpg": "./static/media/barca-city.54e295ed.jpg",
     "static/media/gothic-q.9907b88f.jpg": "./static/media/gothic-q.9907b88f.jpg",
-    "static/media/home-video.624d6bcf.webm": "./static/media/home-video.624d6bcf.webm",
+    "static/media/home-video.7b4a0317.webm": "./static/media/home-video.7b4a0317.webm",
     "static/media/me.62a387da.png": "./static/media/me.62a387da.png",
     "static/media/name.7cf22979.png": "./static/media/name.7cf22979.png",
     "static/media/switz.2e4aca20.jpg": "./static/media/switz.2e4aca20.jpg"
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.80c243c0.js",
     "static/css/2.5c10390e.chunk.css",
-    "static/js/2.3c8c5b41.chunk.js",
-    "static/css/main.0379d27b.chunk.css",
-    "static/js/main.63618c19.chunk.js"
+    "static/js/2.46aa52b9.chunk.js",
+    "static/css/main.78f0200e.chunk.css",
+    "static/js/main.5d23821b.chunk.js"
   ]
 }
