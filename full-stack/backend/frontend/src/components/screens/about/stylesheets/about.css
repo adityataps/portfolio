@@ -65,3 +65,53 @@
     width: 100%;
     height: auto;
 }
+
+.emoji {
+    /*list-style: none;*/
+    padding: 0;
+    margin: 0;
+    list-style-position: outside;
+}
+
+.emoji ul {
+    /*padding-left: 1rem;*/
+    /*text-indent: -0.75rem;*/
+    list-style-position: outside !important;
+    margin-left: 1em;
+}
+
+.emoji li:nth-of-type(1) {
+    list-style-type: "👨‍💻 ";
+    display: list-item;
+    list-style-position: outside;
+    margin-left: 2em;
+}
+.emoji li:nth-of-type(2) {
+    list-style-type: "🎓 ";
+    display: list-item;
+    list-style-position: outside;
+    margin-left: 2em;
+}
+
+
+.emoji li:nth-of-type(3) {
+    list-style-type: "🤖 ";
+    display: list-item;
+    list-style-position: outside;
+    margin-left: 2em;
+}
+
+.emoji li:nth-of-type(4) {
+    list-style-type: "🎮 ";
+    display: list-item;
+    list-style-position: outside;
+    margin-left: 2em;
+}
+
+.emoji li:nth-of-type(5) {
+    list-style-type: "🤓 ";
+    display: list-item;
+    list-style-position: outside;
+    margin-left: 2em;
+}
+

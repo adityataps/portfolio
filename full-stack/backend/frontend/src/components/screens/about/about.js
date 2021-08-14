@@ -66,27 +66,21 @@ function About() {
 
                         <div className={"about-text-container"}>
                             <p>
-                                👨‍💻 I'm a developer based in Atlanta, GA. I am pursuing my Master's in
-                                Interactive Intelligence at Georgia Tech.
-                                <br/>
-                                <br/>
-                                🎓 I completed my Bachelor's in Computer Science at Georgia Tech, with concentrations
-                                in Artificial Intelligence and User Experience and a minor in Health and Medical
-                                Sciences.
-                                <br/>
-                                <br/>
-                                🤖 I love to code in my free time. In the past I've trained an Object Detection model
-                                on road signs with Darknet YOLO, stitched photos into panoramas using Computer Vision,
-                                prototyped front-end wireframes for web and mobile apps, and constructed a chest X-Ray
-                                cardiomegaly and chest neoplasm detector.
-                                <br/>
-                                <br/>
-                                🎮 When I'm not coding, I enjoy gaming, cooking, listening to music and podcasts,
-                                travelling, mentoring, and admiring fine art and design.
-                                <br/>
-                                <br/>
-                                🤓 I am a geek at heart and I love to do what I do,
-                                driven by the unpossible and seeking to be inspired by those around me.
+                                <ul className={"emoji"}>
+                                    <li>I'm a developer based in Atlanta, GA. I am pursuing my Master's in
+                                        Interactive Intelligence at Georgia Tech.<br/><br/></li>
+                                    <li>I completed my Bachelor's in Computer Science at Georgia Tech, with concentrations
+                                    in Artificial Intelligence and User Experience and a minor in Health and Medical
+                                    Sciences.<br/><br/></li>
+                                    <li>I love to code in my free time. In the past I've trained an Object Detection model
+                                    on road signs with Darknet YOLO, stitched photos into panoramas using Computer Vision,
+                                    prototyped front-end wireframes for web and mobile apps, and constructed a chest X-Ray
+                                    cardiomegaly and chest neoplasm detector.<br/><br/></li>
+                                    <li>When I'm not coding, I enjoy gaming, cooking, listening to music and podcasts,
+                                    travelling, mentoring, and admiring fine art and design.<br/><br/></li>
+                                    <li>I am a geek at heart and I love to do what I do,
+                                    driven by the unpossible and seeking to be inspired by those around me.</li>
+                                </ul>
                             </p>
                         </div>
 
