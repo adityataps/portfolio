@@ -18,17 +18,23 @@ function Blog(props) {
 
     let posts = props.data
     let { post } = useParams()
-    let specificPost = posts.find(({date}) => date === post)
-    if (specificPost) {
-        posts = [specificPost]
-        console.log(specificPost)
+    let specificPost = null
+
+    if (post) {
+        specificPost = posts.find(({date}) => date === post)
+        if (specificPost) {
+            posts = [specificPost]
+        }
     }
 
     return(
         <OverlayScrollbarsComponent style={{"background-image": `url(${bgImg})`}} className={"page-wrapper"}>
-            {/*<NavBar />*/}
             {(post && !specificPost) ?
-                <Redirect to={"/blog"} />
+                <Redirect to={
+                    {pathname: "/blog",
+                        state: { data: posts }
+                    }
+                } />
             : null}
             <BlogpostContainer posts={posts} />
         </OverlayScrollbarsComponent>

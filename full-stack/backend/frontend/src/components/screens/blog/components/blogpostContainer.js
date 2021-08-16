@@ -93,12 +93,7 @@ function BuildPost(props) {
                     {post.title}
                 </div>
 
-                {/*<NavLink className={"share-post"} to={"/blog/" + post.date}>*/}
-                {/*    Share*/}
-                {/*</NavLink>*/}
-
                 <div style={{display: `${isMobile ? "block" : "flex"}`}}>
-
 
                     <div className={"post-date"}>
                         Last edited on&nbsp;
