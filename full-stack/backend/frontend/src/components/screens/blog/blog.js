@@ -21,6 +21,7 @@ function Blog(props) {
     let specificPost = posts.find(({date}) => date === post)
     if (specificPost) {
         posts = [specificPost]
+        console.log(specificPost)
     }
 
     return(
