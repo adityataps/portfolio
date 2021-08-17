@@ -23,10 +23,12 @@ function App() {
         const fetchAll = async () => {
             const gotPosts = await axios(
                 process.env.PUBLIC_URL + "/api/blogposts/"
+                // "http://localhost:8000/api/blogposts/"
 
             )
             const gotProjects = await axios(
                 process.env.PUBLIC_URL + "/api/projects/"
+                // "http://localhost:8000/api/projects/"
 
             )
 
@@ -79,12 +81,12 @@ function AnimationApp(props) {
                                     <About />
                                 </DesktopScreen>
                             )} />
-                            <Route path={"/blog/:post"} exact render={() => (
-                                <DesktopScreen>
-                                    <NavBar style={{position: "sticky"}} />
-                                    <Blog data={data.posts}/>
-                                </DesktopScreen>
-                            )} />
+                            {/*<Route path={"/blog#[^\\n]+"} exact render={() => (*/}
+                            {/*    <DesktopScreen>*/}
+                            {/*        <NavBar style={{position: "sticky"}} />*/}
+                            {/*        <Blog data={data.posts}/>*/}
+                            {/*    </DesktopScreen>*/}
+                            {/*)} />*/}
                             <Route path={"/blog"} render={() => (
                                 <DesktopScreen>
                                     <NavBar style={{position: "sticky"}} />

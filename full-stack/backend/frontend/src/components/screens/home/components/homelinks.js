@@ -53,7 +53,7 @@ export function HomeLinksMobile() {
                 projects
             </NavLink>
             <br className={"mobile-br"}/>
-            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.5s'}} to={ResumeLink}>
+            <NavLink className={"mobile app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.5s'}} to={ResumeLink} target={"_blank"}>
                 résumé
             </NavLink>
             <br className={"mobile-br"}/>

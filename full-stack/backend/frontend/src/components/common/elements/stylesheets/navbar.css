@@ -61,7 +61,7 @@
     letter-spacing: 2px;
     font-family: "Poiret One", sans-serif;
     font-weight: bold;
-    text-shadow: 1px 0 black;
+    /*text-shadow: 1px 0 black;*/
     font-size: 1vw;
     overflow: visible;
 }
@@ -93,7 +93,7 @@
 .selected {
     transition: 1s;
     color: crimson !important;
-    text-shadow: 4px 0 black;
+    text-shadow: 2px 0 black;
     pointer-events: none;
 }
 

@@ -17,11 +17,14 @@ function Blog(props) {
     }, [])
 
     let posts = props.data
-    let { post } = useParams()
+    // let { post } = useParams()
+    let post = window.location.hash
     let specificPost = null
 
-    if (post) {
-        specificPost = posts.find(({date}) => date === post)
+    console.log(post)
+
+    if (post !== "") {
+        specificPost = posts.find(({date}) => date === post.substring(1))
         if (specificPost) {
             posts = [specificPost]
         }
