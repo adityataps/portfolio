@@ -123,7 +123,7 @@ function BuildCondensed(props) {
     let post = props.props
     if (post) {
         return (
-            <NavLink className={"condensed-card"} to={`/blog#` + post.date}>
+            <NavLink className={"condensed-card"} to={`/blog#${post.date}`}>
 
                 <div className={"single-post-container condensed"}>
                     <div className={"post-topic condensed"}>
