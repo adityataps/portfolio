@@ -81,12 +81,12 @@ function AnimationApp(props) {
                                     <About />
                                 </DesktopScreen>
                             )} />
-                            <Route path={"/blog#[^\\n]+"} exact render={() => (
-                                <DesktopScreen>
-                                    <NavBar style={{position: "sticky"}} />
-                                    <Blog data={data.posts}/>
-                                </DesktopScreen>
-                            )} />
+                            {/*<Route path={"/blog#[^\\n]+"} exact render={() => (*/}
+                            {/*    <DesktopScreen>*/}
+                            {/*        <NavBar style={{position: "sticky"}} />*/}
+                            {/*        <Blog data={data.posts}/>*/}
+                            {/*    </DesktopScreen>*/}
+                            {/*)} />*/}
                             <Route path={"/blog"} render={() => (
                                 <DesktopScreen>
                                     <NavBar style={{position: "sticky"}} />
