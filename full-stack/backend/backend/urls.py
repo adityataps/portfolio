@@ -28,7 +28,7 @@ router.register(r'blogposts', blogviews.BlogpostView, 'blogpost')
 router.register(r'projects', projectviews.ProjectView, 'project')
 
 urlpatterns = [
-    path('admin/', csrf_exempt(admin.site.urls)),
+    path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('tinymce/', include('tinymce.urls')),
     re_path('(^(?!(api|admin)).*$)',
