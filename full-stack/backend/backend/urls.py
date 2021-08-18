@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include, re_path
 from django.views.generic import TemplateView
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework import routers
 from blogpost import views as blogviews
 from project import views as projectviews
@@ -27,7 +28,7 @@ router.register(r'blogposts', blogviews.BlogpostView, 'blogpost')
 router.register(r'projects', projectviews.ProjectView, 'project')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', csrf_exempt(admin.site.urls)),
     path('api/', include(router.urls)),
     path('tinymce/', include('tinymce.urls')),
     re_path('(^(?!(api|admin)).*$)',
