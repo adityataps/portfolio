@@ -31,14 +31,13 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = [
-        '54.91.14.176',
-        'localhost',
-        '127.0.0.1',
-        'tapshalkar.xyz',
-        'www.tapshalkar.xyz',
-        'd9x4a5tp69vy6.cloudfront.net',
-        '18.214.201.82',
-    ]
+'54.91.14.176',
+ 'localhost',
+  '127.0.0.1',
+   '.tapshalkar.xyz',
+    'd9x4a5tp69vy6.cloudfront.net',
+     '18.214.201.82'
+     ]
 
 
 # Application definition
@@ -150,7 +149,7 @@ STATICFILES_DIRS = (
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://localhost:8000',
-    'http://localhost:5000',
+    'http://localhost:5000'
 ]
 
 TINYMCE_DEFAULT_CONFIG = {
