@@ -130,14 +130,19 @@
 .go-back {
     transition: 1s;
     position: absolute;
-    top: 25px;
-    left: 10px;
+    top: 50px;
+    left: 50px;
     text-decoration: none;
     color: crimson;
     font-size: 20px;
     font-family: "Poiret One", sans-serif;
     font-weight: bolder;
     text-shadow: 1px 1px black;
+}
+
+.go-back.mobile {
+    top: 25px;
+    left: 10px;
 }
 
 .go-back:hover {

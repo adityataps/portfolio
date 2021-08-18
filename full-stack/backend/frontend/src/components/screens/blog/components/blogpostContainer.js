@@ -110,7 +110,7 @@ function BuildPost(props) {
 
                 <div className={`${isMobile ? "mobile" : ""} single-post-container`}>
 
-                    <Link to={"/blog"} className={"go-back"}>
+                    <Link to={"/blog"} className={`${isMobile ? "mobile" : ""} go-back`}>
                         &#x21DC; back
                     </Link>
 
