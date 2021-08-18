@@ -22,6 +22,12 @@
     float: left;
 }
 
+/*@media (prefers-color-scheme: dark) {*/
+/*    .nav-name {*/
+/*        filter: invert(100%);*/
+/*    }*/
+/*}*/
+
 .nav-name.mobile {
     float: none;
     margin: auto;

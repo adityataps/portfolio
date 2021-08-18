@@ -8,6 +8,12 @@
     margin: 25vh auto 5vh;
 }
 
+/*@media (prefers-color-scheme: dark) {*/
+/*    .name {*/
+/*        filter: invert(100%);*/
+/*    }*/
+/*}*/
+
 .name.mobile {
     margin: 10vh auto 10vh;
 }

@@ -128,6 +128,7 @@ function BuildCondensed(props) {
         return (
             <NavLink className={"condensed-card"} to={`/blog?post=${post.date}`}>
 
+                <br />
                 <div className={"single-post-container condensed"}>
                     <div className={"post-topic condensed"}>
                         <BlogpostTopic topic={post.topic} subtopic={post.subtopic}/>
@@ -150,7 +151,7 @@ function BuildCondensed(props) {
 
                 </div>
 
-                <hr />
+                {/*<hr />*/}
 
             </NavLink>
         )
