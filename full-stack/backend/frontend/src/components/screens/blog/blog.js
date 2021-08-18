@@ -6,6 +6,7 @@ import { useParams, useLocation, Redirect } from 'react-router-dom';
 import bgImg from "../../media/gothic-q.jpg";
 import BlogpostContainer from "./components/blogpostContainer";
 import {OverlayScrollbarsComponent} from "overlayscrollbars-react";
+import {Helmet} from "react-helmet";
 
 function Blog(props) {
 
@@ -16,21 +17,35 @@ function Blog(props) {
         })
     }, [])
 
-    // let post = new URLSearchParams(useLocation().search).get("post")
-    // let posts = props.data
-    //
-    // if (post) {
-    //     posts = [posts.find(({date}) => date === post)]
-    //     if (!posts || posts.length === 0) {
-    //         posts = props.data
-    //     }
-    // }
-
     return(
-        <OverlayScrollbarsComponent style={{"background-image": `url(${bgImg})`}} className={"page-wrapper"}>
-            <BlogpostContainer posts={props.data} />
-        </OverlayScrollbarsComponent>
-    )
+
+        <main>
+            <Helmet>
+                <title>Blog - Aditya Tapshalkar</title>
+                <meta name="description" content="About me" />
+
+                <meta itemprop="name" content="Blog - Aditya Tapshalkar" />
+                <meta itemprop="description" content="My musings" />
+                <meta itemprop="image" content="https://tapshalkar.xyz/static/media/me.62a387da.png" />
+
+                <meta property="og:url" content="https://tapshalkar.xyz/blog" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Blog - Aditya Tapshalkar" />
+                <meta property="og:description" content="My musings" />
+                <meta property="og:image" content="https://tapshalkar.xyz/static/media/me.62a387da.png" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Blog - Aditya Tapshalkar" />
+                <meta name="twitter:description" content="My musings" />
+                <meta name="twitter:image" content="https://tapshalkar.xyz/static/media/me.62a387da.png" />
+            </Helmet>
+
+            <OverlayScrollbarsComponent style={{"background-image": `url(${bgImg})`}} className={"page-wrapper"}>
+                <BlogpostContainer posts={props.data} />
+            </OverlayScrollbarsComponent>
+        </main>
+
+)
 }
 
 

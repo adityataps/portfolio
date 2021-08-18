@@ -87,10 +87,8 @@ function BuildPost(props) {
 
             <main>
 
-
-
                 <Helmet>
-                    <title>{post.title}</title>
+                    <title>{`${post.title} - Aditya Tapshalkar`}</title>
                     <meta name={"description"} content={"A blog post by Aditya Tapshalkar"} />
 
                     <meta itemProp="name" content={post.title} />

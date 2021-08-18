@@ -25,6 +25,26 @@ function Home() {
     return(
         <main>
 
+            <Helmet>
+                <title>Aditya Tapshalkar</title>
+                <meta name="description" content="My blogfolio" />
+
+                <meta itemprop="name" content="Aditya Tapshalkar" />
+                <meta itemprop="description" content="My blogfolio" />
+                <meta itemprop="image" content="https://tapshalkar.xyz/static/media/me.62a387da.png" />
+
+                <meta property="og:url" content="https://tapshalkar.xyz/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Aditya Tapshalkar" />
+                <meta property="og:description" content="My blogfolio" />
+                <meta property="og:image" content="https://tapshalkar.xyz/static/media/me.62a387da.png" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Aditya Tapshalkar" />
+                <meta name="twitter:description" content="My blogfolio" />
+                <meta name="twitter:image" content="https://tapshalkar.xyz/static/media/me.62a387da.png" />
+            </Helmet>
+
             <div className={"page"} style={{"overflow": "hidden"}}>
 
                 <div style={{opacity: "50%", filter: "blur(4px)"}}>
