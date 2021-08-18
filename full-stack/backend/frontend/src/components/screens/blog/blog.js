@@ -17,11 +17,8 @@ function Blog(props) {
     }, [])
 
     let posts = props.data
-    // let { post } = useParams()
     let post = window.location.hash
     let specificPost = null
-
-    console.log(post)
 
     if (post !== "") {
         specificPost = posts.find(({date}) => date === post.substring(1))
@@ -35,6 +32,7 @@ function Blog(props) {
             {(post && !specificPost) ?
                 <Redirect to={
                     {pathname: "/blog",
+                        as: "/blog",
                         state: { data: posts }
                     }
                 } />
