@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import "./stylesheets/blog.css"
 import NavBar from "../../common/elements/navbar";
 import styled from "styled-components";
-import { useParams, Redirect } from 'react-router-dom';
+import { useParams, useLocation, Redirect } from 'react-router-dom';
 import bgImg from "../../media/gothic-q.jpg";
 import BlogpostContainer from "./components/blogpostContainer";
 import {OverlayScrollbarsComponent} from "overlayscrollbars-react";
@@ -16,28 +16,19 @@ function Blog(props) {
         })
     }, [])
 
-    let posts = props.data
-    let post = window.location.hash
-    let specificPost = null
-
-    if (post !== "") {
-        specificPost = posts.find(({date}) => date === post.substring(1))
-        if (specificPost) {
-            posts = [specificPost]
-        }
-    }
+    // let post = new URLSearchParams(useLocation().search).get("post")
+    // let posts = props.data
+    //
+    // if (post) {
+    //     posts = [posts.find(({date}) => date === post)]
+    //     if (!posts || posts.length === 0) {
+    //         posts = props.data
+    //     }
+    // }
 
     return(
         <OverlayScrollbarsComponent style={{"background-image": `url(${bgImg})`}} className={"page-wrapper"}>
-            {(post && !specificPost) ?
-                <Redirect to={
-                    {pathname: "/blog",
-                        as: "/blog",
-                        state: { data: posts }
-                    }
-                } />
-            : null}
-            <BlogpostContainer posts={posts} />
+            <BlogpostContainer posts={props.data} />
         </OverlayScrollbarsComponent>
     )
 }

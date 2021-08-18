@@ -22,13 +22,13 @@ function App() {
 
         const fetchAll = async () => {
             const gotPosts = await axios(
-                process.env.PUBLIC_URL + "/api/blogposts/"
-                // "http://localhost:8000/api/blogposts/"
+                // process.env.PUBLIC_URL + "/api/blogposts/"
+                "http://localhost:8000/api/blogposts/"
 
             )
             const gotProjects = await axios(
-                process.env.PUBLIC_URL + "/api/projects/"
-                // "http://localhost:8000/api/projects/"
+                // process.env.PUBLIC_URL + "/api/projects/"
+                "http://localhost:8000/api/projects/"
 
             )
 

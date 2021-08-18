@@ -2,21 +2,14 @@ import React, {useEffect, useState} from 'react'
 import './stylesheets/blogpostContainer.css'
 import parse from 'html-react-parser'
 import BlogpostTopic from './blogpostTopic'
-import {Link, NavLink} from "react-router-dom";
-
+import {Link, NavLink, useLocation} from "react-router-dom";
+import queryString from 'query-string';
 import 'overlayscrollbars/css/OverlayScrollbars.css'
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import ShareContainer from "./blogpostShareContainer";
 import bgImg from "../../../media/switz.jpg";
 
 function BlogpostContainer(props) {
-
-    const unsortedPosts = props.posts;
-    let posts = null;
-
-    if (unsortedPosts) {
-        posts = unsortedPosts.sort((first, second) => second.date.localeCompare(first.date))
-    }
 
     const [windowSize, setWindowSize] = useState(window.innerWidth);
     const isMobile = windowSize <= 800
@@ -40,9 +33,19 @@ function BlogpostContainer(props) {
 
     }, [])
 
+    let posts = props.posts.sort((first, second) => second.date.localeCompare(first.date))
+    let query = queryString.parse(useLocation().search).post
+
+    if (query) {
+        posts = [posts.find(({date}) => date === query)]
+        if (!posts || !posts[0]) {
+            posts = props.posts.sort((first, second) => second.date.localeCompare(first.date))
+        }
+    }
+
     return (
         <OverlayScrollbarsComponent
-            className={`${posts !== null && unsortedPosts.length <= 1 ? "" : "condensed"} posts-wrapper ${isMobile ? "mobile" : ""}`}
+            className={`${posts.length <= 1 ? "" : "condensed"} posts-wrapper ${isMobile ? "mobile" : ""}`}
             options={{
                 overflowBehavior: {x: "hidden"},
                 className: "os-theme-dark"
@@ -50,20 +53,20 @@ function BlogpostContainer(props) {
             <div style={{"margin": "0 auto 0"}}>
 
                 <div className={`${isMobile ? "mobile" : ""} blogpost-container`}>
-                    {posts !== null ? posts.map((post) => (
+                    {posts.map((post) =>
                         <div key={post.date}>
                             {
-                                unsortedPosts.length <= 1 ?
+                                posts.length <= 1 ?
                                     // <div className={"blogpost-container"}>
-                                    <BuildPost props={post} mobile={isMobile} />
+                                    <BuildPost props={post} mobile={isMobile}/>
                                     // </div>
                                     :
                                     // <div className={"blogpost-container condensed"}>
-                                    <BuildCondensed props={post} />
+                                    <BuildCondensed props={post}/>
                                 // </div>
                             }
                         </div>
-                    )) : null}
+                    )}
                 </div>
 
             </div>
@@ -123,7 +126,7 @@ function BuildCondensed(props) {
     let post = props.props
     if (post) {
         return (
-            <NavLink className={"condensed-card"} to={`/blog#${post.date}`}>
+            <NavLink className={"condensed-card"} to={`/blog?post=${post.date}`}>
 
                 <div className={"single-post-container condensed"}>
                     <div className={"post-topic condensed"}>
