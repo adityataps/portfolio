@@ -28,7 +28,7 @@ if os.path.isfile(dotenv_file):
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
 '54.91.14.176',
@@ -142,7 +142,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
      os.path.join(BASE_DIR, 'frontend', "build", "static"),
-#     os.path.join(BASE_DIR, 'static'),
 )
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'frontend', '')
@@ -150,6 +149,7 @@ STATICFILES_DIRS = (
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://localhost:8000',
+    'http://localhost:5000'
 ]
 
 TINYMCE_DEFAULT_CONFIG = {

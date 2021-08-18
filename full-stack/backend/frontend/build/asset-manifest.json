@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.1019325f.chunk.css",
-    "main.js": "./static/js/main.af214661.chunk.js",
-    "main.js.map": "./static/js/main.af214661.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.80c243c0.js",
-    "runtime-main.js.map": "./static/js/runtime-main.80c243c0.js.map",
+    "main.css": "./static/css/main.e361b360.chunk.css",
+    "main.js": "./static/js/main.179e4cdf.chunk.js",
+    "main.js.map": "./static/js/main.179e4cdf.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.b8672ada.js",
+    "runtime-main.js.map": "./static/js/runtime-main.b8672ada.js.map",
     "static/css/2.5c10390e.chunk.css": "./static/css/2.5c10390e.chunk.css",
-    "static/js/2.a5f06edf.chunk.js": "./static/js/2.a5f06edf.chunk.js",
-    "static/js/2.a5f06edf.chunk.js.map": "./static/js/2.a5f06edf.chunk.js.map",
-    "static/js/3.c7d875c5.chunk.js": "./static/js/3.c7d875c5.chunk.js",
-    "static/js/3.c7d875c5.chunk.js.map": "./static/js/3.c7d875c5.chunk.js.map",
+    "static/js/2.f80221af.chunk.js": "./static/js/2.f80221af.chunk.js",
+    "static/js/2.f80221af.chunk.js.map": "./static/js/2.f80221af.chunk.js.map",
+    "static/js/3.dee763fb.chunk.js": "./static/js/3.dee763fb.chunk.js",
+    "static/js/3.dee763fb.chunk.js.map": "./static/js/3.dee763fb.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.5c10390e.chunk.css.map": "./static/css/2.5c10390e.chunk.css.map",
-    "static/css/main.1019325f.chunk.css.map": "./static/css/main.1019325f.chunk.css.map",
-    "static/js/2.a5f06edf.chunk.js.LICENSE.txt": "./static/js/2.a5f06edf.chunk.js.LICENSE.txt",
+    "static/css/main.e361b360.chunk.css.map": "./static/css/main.e361b360.chunk.css.map",
+    "static/js/2.f80221af.chunk.js.LICENSE.txt": "./static/js/2.f80221af.chunk.js.LICENSE.txt",
     "static/media/Resume.1afe50e7.pdf": "./static/media/Resume.1afe50e7.pdf",
     "static/media/arc.d43125e8.jpg": "./static/media/arc.d43125e8.jpg",
     "static/media/barca-beach.1a0f2d2e.jpg": "./static/media/barca-beach.1a0f2d2e.jpg",
@@ -24,10 +24,10 @@
     "static/media/switz.2e4aca20.jpg": "./static/media/switz.2e4aca20.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.80c243c0.js",
+    "static/js/runtime-main.b8672ada.js",
     "static/css/2.5c10390e.chunk.css",
-    "static/js/2.a5f06edf.chunk.js",
-    "static/css/main.1019325f.chunk.css",
-    "static/js/main.af214661.chunk.js"
+    "static/js/2.f80221af.chunk.js",
+    "static/css/main.e361b360.chunk.css",
+    "static/js/main.179e4cdf.chunk.js"
   ]
 }
