@@ -8,6 +8,7 @@ import 'overlayscrollbars/css/OverlayScrollbars.css'
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import ShareContainer from "./blogpostShareContainer";
 import bgImg from "../../../media/switz.jpg";
+import {Helmet} from "react-helmet";
 
 function BlogpostContainer(props) {
 
@@ -79,44 +80,73 @@ function BuildPost(props) {
     let post = props.props
     let isMobile = props.mobile
 
+    let url = window.location.href
+
     if (post) {
         return (
 
-            <div className={`${isMobile ? "mobile" : ""} single-post-container`}>
+            <main>
 
-                <Link to={"/blog"} className={"go-back"}>
-                    &#x21DC; back
-                </Link>
 
-                <div className={"post-topic"}>
-                    <BlogpostTopic topic={post.topic} subtopic={post.subtopic} />
-                </div>
 
-                <div className={"post-title"}>
-                    {post.title}
-                </div>
+                <Helmet>
+                    <title>{post.title}</title>
+                    <meta name={"description"} content={"A blog post by Aditya Tapshalkar"} />
 
-                <div style={{display: `${isMobile ? "block" : "flex"}`}}>
+                    <meta itemProp="name" content={post.title} />
+                    <meta itemProp="description" content={"A blog post by Aditya Tapshalkar"} />
+                    <meta itemProp="image" content="" />
 
-                    <div className={"post-date"}>
-                        Last edited on&nbsp;
-                        {new Intl.DateTimeFormat("en-GB", {
-                            year: "numeric",
-                            month: "long",
-                            day: "2-digit"
-                        }).format(new Date(post.date))}
+                    <meta property="og:url" content={url} />
+                    <meta property="og:type" content={"website"} />
+                    <meta property="og:title" content={post.title} />
+                    <meta property="og:description" content={"A blog post by Aditya Tapshalkar"} />
+                    <meta property="og:image" content="" />
+
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:title" content={post.title} />
+                    <meta name="twitter:description" content={"A blog post by Aditya Tapshalkar"} />
+                    <meta name="twitter:image" content="" />
+                </Helmet>
+
+
+                <div className={`${isMobile ? "mobile" : ""} single-post-container`}>
+
+                    <Link to={"/blog"} className={"go-back"}>
+                        &#x21DC; back
+                    </Link>
+
+                    <div className={"post-topic"}>
+                        <BlogpostTopic topic={post.topic} subtopic={post.subtopic} />
                     </div>
 
-                    <ShareContainer />
+                    <div className={"post-title"}>
+                        {post.title}
+                    </div>
+
+                    <div style={{display: `${isMobile ? "block" : "flex"}`}}>
+
+                        <div className={"post-date"}>
+                            Last edited on&nbsp;
+                            {new Intl.DateTimeFormat("en-GB", {
+                                year: "numeric",
+                                month: "long",
+                                day: "2-digit"
+                            }).format(new Date(post.date))}
+                        </div>
+
+                        <ShareContainer />
+                    </div>
+
+                    <hr style={{margin: "25px auto 50px"}}/>
+
+                    <div className={"post-content"}>
+                        {parse(post.content)}
+                    </div>
+
                 </div>
+            </main>
 
-                <hr style={{margin: "25px auto 50px"}}/>
-
-                <div className={"post-content"}>
-                    {parse(post.content)}
-                </div>
-
-            </div>
         )
     }
     return null
