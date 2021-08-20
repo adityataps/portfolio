@@ -12,7 +12,8 @@ as a full-stack webapp developer.
 ## Stack
 - Django back-end
 - React front-end
-- Hosted on AWS EC2
+- Hosted on AWS Lightsail
+- DNS Hosted with AWS Route 53
 
 ## Logs
 ### June 18, 2021:
