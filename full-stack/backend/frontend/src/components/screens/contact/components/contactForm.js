@@ -20,12 +20,20 @@ function ContactForm() {
     }
 
     function sendEmail(e) {
+        // setValidInput(!validInput)
         e.preventDefault();
         console.log(toSend);
         init("user_H2OaygSGutUoMNRkjjljL");
         send("service_8m3v5yr", "template_uqxem09" , toSend, "user_H2OaygSGutUoMNRkjjljL")
             .then((result) => {
                 console.log(result.text);
+                setToSend({
+                    nameInput: '',
+                    emailInput: '',
+                    subject: '',
+                    message: '',
+                })
+                alert("Email sent!");
             }, (error) => {
                 console.log(error.text)
             })
@@ -33,7 +41,7 @@ function ContactForm() {
 
     return (
         <div className={"form-container"}>
-            <Form className={"form-contents"} onSubmit={sendEmail}>
+            <Form id={"form-contents"} onSubmit={sendEmail}>
 
                 <Form.Group controlId={"nameInput"}>
                     <Form.Label> Name </Form.Label>
@@ -66,6 +74,7 @@ function ContactForm() {
                 <Button type={"submit"} className={"submit-button"} variant={"outline-primary"}> Submit </Button>
 
             </Form>
+
         </div>
     )
 
